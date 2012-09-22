@@ -1,4 +1,3 @@
-website
-=======
+# Our rocking website
 
-website
+Coming soon, a hyde generated website
