@@ -1,0 +1,34 @@
+.deals-div{
+	width: 32%;
+	height:330px;
+	margin-top: 30px;
+	padding-left: 1%;
+}
+#deals-wrapper{
+	margin-left: 30px;
+	width:95%;
+	height:auto;
+	overflow: auto;
+}
+#deal-1{
+	float:left;
+	border-right: 1px solid gray;
+}
+#deal-2{
+	float:left;
+	border-right: 1px solid gray;
+}
+#deal-3{
+	float:left;
+}
+#deal-4{
+	float:left;
+	border-right: 1px solid gray;
+}
+#deal-5{
+	float:left;
+}
+footer{
+	position: relative;
+	padding:5% 15% 0px 15%;
+}
