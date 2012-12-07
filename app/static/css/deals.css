@@ -1,57 +1,65 @@
-#wrapper{
-	position:relative;
-	top:-10px;
-	left: 240px;
-	height:auto;
-	width: 900;
-}
-.row{
-	height:800px;
-	width:900px;
-}
-.in-box{
-	position: relative;
-	height: 270px;
-	top:500px;
-	color:white;
-	width:auto;
-	background-color:black;
-	opacity: 0.7;
-	padding-top:30px; 
-}
-#d1{
-	background: url('/static/images/bgk1.jpg') no-repeat fixed 100px;
-}
-#d2{
-	background: url('/static/images/sh1.jpg') no-repeat fixed 100px;
-}
-#d3{
-	background: url('/static/images/bd1.jpg') no-repeat fixed 100px;
-}
-#d4{
-	background: url('/static/images/vn1.jpg') no-repeat fixed 100px;
-}
-#d5{
-	background: url('/static/images/wr1.jpg') no-repeat fixed 100px;
-}
-.header-flag{
-	padding-left:40px;
-
-}
-.content{
-	padding-left: 50px;
+body {
+  background-color: black;
+  color: white;
+  font-family: 'Droid Sans', sans-serif;
+  font-size: 14.5px;
 }
 
+#intro {
+  font-family: 'Josefin Sans', Helvetica, Arial, sans-serif;
+  background-color: #222;
+  border-radius: 15px;
+  text-align: center;
+}
 
+#intro .content {
+  padding: 2em 0;
+}
 
+#intro p {
+  margin-top: 3em;
+}
 
+#intro ul {
+  list-style: none;
+}
 
+#intro li {
+  font-weight: bold;
+}
 
+.detail {
+  background: rgba(27, 27, 27, 0.7);
+  padding: 2em;
+  height: 230px;
+  opacity: 0.7;
+}
 
+.deal .bg {
+  height: 400px;
+  width: 100%;
+}
 
+#d1 .deal .bg {
+  background: url('http://farm7.staticflickr.com/6211/6250151155_baf2ae4358_b.jpg') no-repeat;
+}
+#d2 .deal .bg {
+  background: url('/static/images/sh1.jpg') no-repeat;
+}
+#d3 .deal .bg {
+  background: url('/static/images/bd1.jpg') no-repeat;
+}
+#d4 .deal .bg {
+  background: url('/static/images/vn1.jpg') no-repeat;
+}
+#d5 .deal .bg {
+  background: url('/static/images/wr1.jpg') no-repeat;
+}
 
+#d1, #d2, #d3, #d4, #d5 {
+  margin-top: 3em;
+}
 
 footer{
-	position: relative;
-	padding:5% 15% 0px 15%;
+  margin-top: 4em;
 }
