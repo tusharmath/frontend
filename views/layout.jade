@@ -10,12 +10,17 @@ html(lang="en")
     link(rel='stylesheet', href='/fe/static/css/bootstrap.min.css')
     link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Josefin+Sans|Dancing+Script')
     link(rel='stylesheet', href='/fe/static/css/bootstrap-responsive.min.css')
+    link(rel='stylesheet', href='/fe/static/css/wwstay.css')
 
   body
-    div.navbar.navbar-fixed-top
+    div.navbar.navbar-inverse.navbar-fixed-top
       div.navbar-inner
         div.container
-          a(class='brand', href='/') WWstay
+          button(data-toggle='collapse', data-target='.nav-collapse').btn.btn-navbar
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a(href='/').brand WWstay
 
     div.container
       block content
