@@ -1,7 +1,15 @@
 # Our rocking website
 
-Coming soon, a hyde generated website
+Our awesome node powered frontend
 
-# To run
+## Dev setup
 
-```$ yeoman server``` 
+ * Install node
+ * Install dependencies
+        
+        $ npm install
+
+ * Run server (you can run with node, but nodemon picks up changes automagically)
+
+        $ sudo npm install -g nodemon
+        $ nodemon app.js
