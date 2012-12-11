@@ -21,6 +21,49 @@ html(lang="en")
             span.icon-bar
             span.icon-bar
           a(href='/').brand WWstay
+          div.nav-collapse.collapse
+            ul.nav
+              li#fb.social-icon
+                a(href='http://www.facebook.com/wwstay') Facebook
+              li#twitter.social-icon
+                a(href='http://twitter.com/wwstay') Twitter
+              li#gplus.social-icon
+                a(href='https://plus.google.com/103949997937127342839') G+
+          div#contact-details
+            div#contact-suitcase
+            div.content
+              | CALL: +91 (0)80 40969706 
+              span(style='color: #60710C; padding: 0 10px') Or
+              | EMAIL: &nbsp;
+              a(href='mailto:travel@wwstay.com') TRAVEL@WWSTAY.COM
+    
+    div.carousel.slide.carousel-fade#my-carousel
+      div.carousel-inner
+        div.item.active
+          img(src='/fe/static/images/slide-01.png', alt='')
+          div.container
+            div.carousel-caption
+              div.carousel-caption-title
+                h1 Step out to a new international travel experience
+        div.item
+          img(src='/fe/static/images/02.jpg', alt='')
+          div.container
+            div.carousel-caption
+              div.carousel-caption-title
+                h1 Cost, convenience &amp; comfort as one package.
+        div.item
+          img(src='/fe/static/images/03.jpg', alt='')
+          div.container
+            div.carousel-caption
+              div.carousel-caption-title
+                h1 Global startup with bookings in 70 countries &amp; 3 offices
+        div.item
+          img(src='/fe/static/images/04.jpg', alt='')
+          div.container
+            div.carousel-caption
+              div.carousel-caption-title
+                h1 Best in industry savings 'coz we bulk buy, do predictive analysis.
+          
 
     div.container
       block content
@@ -30,6 +73,15 @@ html(lang="en")
         &copy; 2011-12 Global Stay service pvt Ltd.  All rights reserved.
         
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(src='/fe/static/js/bootstrap.min.js')
+    script
+      $(function() {
+        $('#my-carousel').carousel({
+          interval: 5000
+        });
+      }); 
+      $('.carousel').carousel()
+      
     block js-variables
     script(type='text/javascript')
       var _gaq = _gaq || [];

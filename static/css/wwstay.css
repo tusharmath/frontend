@@ -21,3 +21,91 @@
   color: #777;
   text-shadow: 0 1px 0 white;
 }
+
+.navbar .nav > li {
+  float: left;
+  margin-right: 8px;
+}
+
+.navbar .nav {
+  position: relative;
+  left: 0;
+  display: block;
+  float: right;
+  margin: 27px 10px 0 0;
+}
+
+.navbar .nav a {
+  text-indent: -9999px;
+}
+
+.social-icon {
+  width: 22px;
+  height: 25px;
+}
+
+#fb {
+  background: url(/fe/static/images/sprite-background.png) no-repeat -27px -180px;
+}
+#twitter {
+  background: url(/fe/static/images/sprite-background.png) no-repeat -56px -180px;
+}
+#gplus {
+  background: url('/fe/static/images/sprite-background.png') no-repeat -86px -180px;
+}
+
+#contact-details {
+  float: right;
+  margin-top: 95px;
+  margin-right: -95px;
+}
+#contact-suitcase {
+  float: left;
+  margin-right: 15px;
+  background: url('/fe/static/images/sprite-background.png') no-repeat -118px -223px;
+  width: 33px;
+  height: 22px;
+}
+#contact-details .content {
+  float: right;
+  font-family: 'Exo', sans-serif;
+  font-weight: 700;
+  font-size: 20px;
+  color: white;
+  line-height: 28px;
+}
+#contact-details .content a {
+  color: white;
+}
+
+.carousel, .carousel .item {
+  height: 600px;
+}
+.carousel-inner {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+.carousel .container {
+  position: relative;
+  margin-top: -250px;
+  height: 60px;
+}
+.carousel-caption {
+  background: none;
+}
+.carousel-caption h1, .carousel-caption .lead {
+  color: white;
+  padding: 5px 10px;
+  font-size: 32px;
+  font-family: 'Exo', sans-serif;
+  font-weight: 400;
+  color: white;
+}
+.carousel-caption-title {
+  background: #333;
+  background: rgba(0, 0, 0, 0.65);
+}
+.carousel-caption-title {
+  float: right;
+}
