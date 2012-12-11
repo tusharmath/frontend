@@ -1,3 +1,7 @@
+h1 {
+  font-family: 'Exo', sans-serif;
+  color: white;
+}
 .navbar-inverse .navbar-inner {
   background: url(/fe/static/images/navbar-pattern.png);
   background-repeat: repeat-x;
@@ -78,8 +82,11 @@
   color: white;
 }
 
+.carousel {
+  margin-bottom: 0;
+}
 .carousel, .carousel .item {
-  height: 600px;
+  height: 450px;
 }
 .carousel-inner {
   overflow: hidden;
@@ -95,10 +102,8 @@
   background: none;
 }
 .carousel-caption h1, .carousel-caption .lead {
-  color: white;
   padding: 5px 10px;
   font-size: 32px;
-  font-family: 'Exo', sans-serif;
   font-weight: 400;
   color: white;
 }
@@ -108,4 +113,101 @@
 }
 .carousel-caption-title {
   float: right;
+}
+
+.marketing {
+  margin-top: -900px;
+}
+.bring-up {
+  position: relative;
+  z-index: 99;
+  margin-bottom: 30px;
+}
+
+.carouselBorder {
+  background: url(/fe/static/images/carouselBorder.png);
+  background-repeat: repeat-x;
+  height: 60px;
+}
+
+#contentBG {
+  margin: 0 auto;
+  position: relative;
+  z-index: -9;
+  margin-top: -60px;
+  background: url(/fe/static/images/contentBack.jpg) repeat;
+  height: 821px;
+  width: 1394;
+}
+.marketing .bring-up a {
+  height: 338px;
+  width: 288px;
+  display: block;
+  text-indent: -9999px;
+}
+#business-travel {
+  margin: 0 10px;
+  background: url(/fe/static/images/sprite-background.png) no-repeat -29px -598px;
+  width: 288px;
+  height: 338px;
+}
+#leisure-travel {
+  margin: 10px;
+  background: url('/fe/static/images/sprite-background.png') no-repeat -336px -610px;
+  width: 263px;
+  height: 314px;
+}
+#deals {
+  background: url('/fe/static/images/sprite-background.png') no-repeat -13px -947px;
+  width: 361px;
+  height: 313px;
+}
+
+#deals h1 {
+  text-align: center;
+  margin-top: 25px;
+  font-size: 32px;
+  padding: 65px 0 10px;
+  font-weight: 700;
+}
+
+#deals ul {
+  padding: 0;
+  margin: 0 0 10px 25px;
+}
+
+#deals li {
+  float: left;
+  margin: 0 3px 0 -2px;
+  width: 150px;
+  height: 100px;
+  border: 2px #DEB97B solid;
+  list-style: none;
+}
+
+#deals li img {
+  max-width: 100%;
+  height: auto;
+  border: 0;
+}
+
+#deals .validity {
+  float: right;
+  margin-right: 35px;
+  width: 300px;
+  text-align: right;
+  font-size: 20px;
+  color: white;
+}
+
+#deals .disclaimer {
+  font-weight: lighter;
+  text-align: left;
+  color: white;
+  margin-left: 18px;
+}
+
+/* Image is not visible when we inherit this rule */
+#deals ul li a {
+  display: inline;
 }
