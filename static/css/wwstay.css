@@ -18,6 +18,9 @@ h1 {
   color: white;
 }
 
+.navbar-fixed-top {
+  position: absolute;
+}
 .navbar-inverse .navbar-inner {
   background: url(/fe/static/images/navbar-pattern.png);
   background-repeat: repeat-x;
