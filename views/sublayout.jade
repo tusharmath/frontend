@@ -1,0 +1,87 @@
+!!! 5
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    title WWStay - Business &amp; Leisure Travel
+    meta(name="description", content="We provide accomodation solutions to business travellers")
+    meta(name="author", content="WWstay Inc")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel='shortcut icon', href='/favicon.ico')
+    link(href='/fe/static/css/back.css', rel='stylesheet')
+    link(href='http://fonts.googleapis.com/css?family=Exo:400,600,700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Quicksand:700', rel='stylesheet', type='text/css')
+    link(href='http://fonts.googleapis.com/css?family=Maven+Pro:500', rel='stylesheet', type='text/css')
+
+  body
+    .wrap
+      .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-inner
+          .container
+            button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.brand(href='index.html') Bootstrap
+            .nav-collapse.collapse
+              ul.nav
+                li.miniFacebook
+                  a(href='./index.html') Facebook
+                li.miniTwitter
+                  a(href='./getting-started.html') Twitter
+                li.miniGplus
+                  a(href='./scaffolding.html') G+
+            #navbarContactarea
+              #navbarContactpre
+              .navbarContact
+                | CALL: 01234567890
+                span.contactOR or
+                | EMAIL:
+                a(href='mailto=travel@wwstay.com') TRAVEL@WWSTAY.COM
+
+
+      #myCarousel.carousel.slide.carousel-fade
+        .carousel-inner
+          .item.active
+            img(src='fe/static/images/slide-01.png', alt='')
+              .container
+          .item
+            img(src='fe/static/images/02.jpg', alt='')
+              .container  
+          .item
+            img(src='fe/static/images/03.jpg', alt='')
+              .container  
+          .item
+            img(src='fe/static/images/04.jpg', alt='')
+              .container    
+
+    block content
+
+
+    footer
+
+    script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
+    script(src='/fe/static/js/bootstrap.min.js')
+    script
+      $(function() {
+      $('#myCarousel').carousel({
+      interval: 3000
+      });
+      });
+      $('.carousel').carousel()
+    script(type='text/javascript')
+      jQuery(function($){
+      $(".tweet").tweet({
+      username: "seaofclouds",
+      join_text: "auto",
+      avatar_size: 32,
+      count: 2,
+      auto_join_text_default: "we said,",
+      auto_join_text_ed: "we",
+      auto_join_text_ing: "we were",
+      auto_join_text_reply: "we replied to",
+      auto_join_text_url: "we were checking out",
+      loading_text: "loading tweets..."
+      });
+      });
+
+    
