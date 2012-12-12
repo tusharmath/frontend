@@ -69,9 +69,38 @@ html(lang="en")
 
     block content
 
-    footer
-      hr
-      &copy; 2011-12 Global Stay service pvt Ltd.  All rights reserved.
+    div#footer
+      div.container.content
+        div.row
+          div.span4.offset2.disclaimer
+            p
+              | &copy; 2012 WWStay All Rights Reserved | &nbsp;
+              a(href="/privacy") Fine Print
+
+          div.span6
+            ul.nav.nav-pills.pull-right.go-green
+              li
+                a(href="/business") BUSINESS TRAVEL
+              li.go-pink.hspace
+                | //
+              li
+                a(href="/leisure") LEISURE TRAVEL
+              li.go-pink.hspace
+                | //
+              li
+                a(href="/deals") SPECIAL OFFERS
+            ul.nav.nav-pills.pull-right.links
+              li
+                a(href="/") HOME
+              li.hspace |
+              li
+                a(href="/about") ABOUT
+              li.hspace |
+              li
+                a(href="#") NEWS
+              li.hspace |
+              li
+                a(href="#") BLOG
         
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
     script(src='/fe/static/js/bootstrap.min.js')

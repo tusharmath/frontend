@@ -8,6 +8,15 @@ h1 {
 .vspace-five {
   margin-top: 5em;
 }
+.hspace {
+  padding: 0 1em;
+}
+
+.disclaimer {
+  font-weight: lighter;
+  text-align: left;
+  color: white;
+}
 
 .navbar-inverse .navbar-inner {
   background: url(/fe/static/images/navbar-pattern.png);
@@ -208,9 +217,6 @@ h1 {
 }
 
 #deals .disclaimer {
-  font-weight: lighter;
-  text-align: left;
-  color: white;
   margin-left: 18px;
 }
 
@@ -345,4 +351,41 @@ h1 {
 .tweet_time {
   margin-right: 5px;
   color: black;
+}
+
+#footer {
+  height: 425px;
+  margin-top: -180px;
+  background: url('/fe/static/images/footerBg.png') repeat-x;
+  position: relative;
+  z-index: -1;
+}
+
+#footer .content {
+  position: absolute;
+  margin: 0;
+  bottom: 20px;
+}
+
+#footer .disclaimer a {
+  color: white;
+}
+
+#footer .nav-pills li a {
+  padding: 0;
+}
+
+#footer .links a {
+  color: white;
+}
+
+#footer .go-green,
+#footer .go-green a {
+  text-decoration: none;
+  color: #2CC75C;
+  font-size: 18px;
+}
+
+#footer .go-pink {
+  color: #C3188D;
 }
