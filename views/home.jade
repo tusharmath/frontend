@@ -73,7 +73,7 @@ block content
         img(src="/fe/static/images/recent_destinations/06.jpg",alt="Place01")
     div.recentDestinationsfooter
 
-    div.span3.offset1#contactus
+    div.press.span3.offset1#contactus
       div.content
         h4 REQUEST A QUOTE
         p.vspace-two
@@ -86,3 +86,36 @@ block content
           input(type='text', placeholder='Check-out date').contactText-input
           input(type='text', placeholder='Budget').contactText-input
           button(type="submit") GO
+
+    div.press.span4#testimonials
+      div.content
+        h4 Delighted &amp; happy
+        div.vspace-two.testimonial
+          blockquote
+            p
+              | I like their quick response and ability to negotiate good deals.
+              | I had problem a problem reaching the airport.  But I called
+              | WWstay and they could arrange for a cab in quick time.
+            small Joe Dash, Senior Legal Counsel
+
+    div.press.span3#twitter-feed
+      h4 Recent tweets
+      div.tweet.vspace-two
+
+block additional-js
+  script(src='/fe/static/js/jquery.tweet.js')
+  script
+    jQuery(function($){
+        $(".tweet").tweet({
+            username: "wwstay",
+            join_text: "auto",
+            avatar_size: 32,
+            count: 2,
+            auto_join_text_default: "we said,",
+            auto_join_text_ed: "we",
+            auto_join_text_ing: "we were",
+            auto_join_text_reply: "we replied to",
+            auto_join_text_url: "we were checking out",
+            loading_text: "loading tweets..."
+        });
+    });
