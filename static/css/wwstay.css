@@ -12,6 +12,10 @@ h1 {
   padding: 0 1em;
 }
 
+blockquote {
+  border-left: 5px solid #800000;
+}
+
 .disclaimer {
   font-weight: lighter;
   text-align: left;
@@ -114,7 +118,7 @@ h1 {
 }
 .carousel .container {
   position: relative;
-  margin-top: -250px;
+  margin-top: -300px;
   height: 60px;
 }
 .carousel-caption {
