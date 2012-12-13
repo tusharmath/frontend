@@ -23,7 +23,7 @@ html(lang="en")
             span.icon-bar
             span.icon-bar
           a(href='/').brand WWstay
-          div.nav-collapse.collapse
+          div.nav-collapse
             ul.nav
               li#fb.social-icon
                 a(href='http://www.facebook.com/wwstay') Facebook
@@ -34,7 +34,7 @@ html(lang="en")
           div#contact-details
             div#contact-suitcase
             div.content
-              | CALL: +91 (0)80 40969706 
+              | CALL: +91 8040969706 
               span(style='color: #60710C; padding: 0 10px') Or
               | EMAIL: &nbsp;
               a(href='mailto:travel@wwstay.com') TRAVEL@WWSTAY.COM
@@ -47,43 +47,71 @@ html(lang="en")
             div.carousel-caption
               div.carousel-caption-title
                 h1 Step out to a new international travel experience
+            a(href='/business').btn.btn-large.btn-primary know more &rsaquo;&rsaquo;
         div.item
           img(src='/fe/static/images/02.jpg', alt='')
           div.container
             div.carousel-caption
               div.carousel-caption-title
                 h1 Cost, convenience &amp; comfort in one package.
+            a(href='/business').btn.btn-large.btn-primary know more &rsaquo;&rsaquo;
         div.item
           img(src='/fe/static/images/03.jpg', alt='')
           div.container
             div.carousel-caption
               div.carousel-caption-title
                 h1 Global startup with bookings in 70 countries from 3 offices
+            a(href='/business').btn.btn-large.btn-primary know more &rsaquo;&rsaquo;
         div.item
           img(src='/fe/static/images/04.jpg', alt='')
           div.container
             div.carousel-caption
               div.carousel-caption-title
                 h1 Best in industry savings 'coz we bulk buy, do predictive analysis.
-          
+            a(href='/business').btn.btn-large.btn-primary know more &rsaquo;&rsaquo;
 
     block content
 
-    footer
-      hr
-      &copy; 2011-12 Global Stay service pvt Ltd.  All rights reserved.
+    div#footer
+      div.container.content
+        div.row
+          div.span4.offset2.disclaimer
+            p
+              | &copy; 2012 WWStay All Rights Reserved | &nbsp;
+              a(href="/privacy") Fine Print
+
+          div.span6
+            ul.nav.nav-pills.pull-right.go-green
+              li
+                a(href="/business") BUSINESS TRAVEL
+              li.go-pink.hspace
+                | //
+              li
+                a(href="/leisure") LEISURE TRAVEL
+              li.go-pink.hspace
+                | //
+              li
+                a(href="/deals") SPECIAL OFFERS
+            ul.nav.nav-pills.pull-right.links
+              li
+                a(href="/") HOME
+              li.hspace |
+              li
+                a(href="/about") ABOUT
+              li.hspace |
+              li
+                a(href="/about") CAREERS
+              li.hspace |
+              li
+                a(href="#") NEWS
+              li.hspace |
+              li
+                a(href="#") BLOG
         
     script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js')
     script(src='/fe/static/js/bootstrap.min.js')
     script
-      $(function() {
-        $('#my-carousel').carousel({
-          interval: 5000
-        });
-      }); 
       $('.carousel').carousel()
-      
-    block js-variables
     script(type='text/javascript')
       var _gaq = _gaq || [];
       _gaq.push(['_setAccount', 'UA-36222984-1']);
@@ -94,3 +122,5 @@ html(lang="en")
         ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
       })();
+    block additional-js
+

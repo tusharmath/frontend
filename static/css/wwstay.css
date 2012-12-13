@@ -8,7 +8,23 @@ h1 {
 .vspace-five {
   margin-top: 5em;
 }
+.hspace {
+  padding: 0 1em;
+}
 
+blockquote {
+  border-left: 5px solid #800000;
+}
+
+.disclaimer {
+  font-weight: lighter;
+  text-align: left;
+  color: white;
+}
+
+.navbar-fixed-top {
+  position: absolute;
+}
 .navbar-inverse .navbar-inner {
   background: url(/fe/static/images/navbar-pattern.png);
   background-repeat: repeat-x;
@@ -67,8 +83,8 @@ h1 {
 
 #contact-details {
   float: right;
-  margin-top: 95px;
-  margin-right: -95px;
+  margin-top: 75px;
+  margin-right: -70px;
 }
 #contact-suitcase {
   float: left;
@@ -102,7 +118,7 @@ h1 {
 }
 .carousel .container {
   position: relative;
-  margin-top: -250px;
+  margin-top: -300px;
   height: 60px;
 }
 .carousel-caption {
@@ -114,12 +130,17 @@ h1 {
   font-weight: 400;
   color: white;
 }
-.carousel-caption-title {
+.carousel-caption-title,
+.carousel .carousel-inner .btn-large {
   background: #333;
   background: rgba(0, 0, 0, 0.65);
 }
 .carousel-caption-title {
   float: right;
+}
+.carousel .carousel-inner .btn-large {
+  float: right;
+  margin: 60px 13px 0 0;
 }
 
 .marketing {
@@ -208,9 +229,6 @@ h1 {
 }
 
 #deals .disclaimer {
-  font-weight: lighter;
-  text-align: left;
-  color: white;
   margin-left: 18px;
 }
 
@@ -292,19 +310,94 @@ h1 {
   height: 40px;
 }
 
-#contactus {
+#contactus, #testimonials, #twitter-feed {
   background: url('/fe/static/images/sprite-background.png') no-repeat -627px -316px;
 }
 
-#contactus .content {
+#twitter-feed {
+  height: 255px;
+}
+
+.press .content {
   margin: 20px;
 }
 
-#contactus h4 {
+.press h4 {
   font-size: 24px;
   font-family: 'Quicksand', sans-serif;
   font-weight: 700;
   letter-spacing: -1px;
   text-transform: uppercase;
+}
+#contactus h4 {
   color: #C82600;
+}
+#testimonials h4 {
+  color: #6A8A2A;
+}
+#twitter-feed h4 {
+  color: #3B5998;
+  margin: 20px 0 0 15px;
+}
+
+.tweet, .query {
+  font: 11PX Tahoma, Geneva, sans-serif;
+  color: #696A6C;
+}
+.tweet ul {
+  margin: 0 10px 0 10px;
+}
+.tweet_list .tweet_avatar {
+  padding-right: .5em;
+  float: left;
+}
+.tweet_list li {
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 0;
+  list-style-type: none;
+  line-height: 11px;
+  height: 35px;
+  margin-bottom: 10px;
+}
+.tweet_time {
+  margin-right: 5px;
+  color: black;
+}
+
+#footer {
+  height: 425px;
+  margin-top: -180px;
+  background: url('/fe/static/images/footerBg.png') repeat-x;
+  position: relative;
+  z-index: -1;
+}
+
+#footer .content {
+  position: absolute;
+  margin: 0;
+  bottom: 20px;
+}
+
+#footer .disclaimer a {
+  color: white;
+}
+
+#footer .nav-pills li a {
+  padding: 0;
+}
+
+#footer .links a {
+  color: white;
+}
+
+#footer .go-green,
+#footer .go-green a {
+  text-decoration: none;
+  color: #2CC75C;
+  font-size: 18px;
+}
+
+#footer .go-pink {
+  color: #C3188D;
 }
