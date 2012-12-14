@@ -16,3 +16,6 @@ exports.team = function(req,res){
 exports.leisure = function(req,res){
 	res.render('leisure')
 }
+exports.business = function(req,res){
+	res.render('business')
+}

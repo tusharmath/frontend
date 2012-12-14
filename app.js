@@ -21,12 +21,13 @@ app.configure('development', function(){
   app.use(express.errorHandler());
 });
 
-app.get('/',wwstay.home);
-app.get('/deals',wwstay.deals)
-app.get('/terms',wwstay.terms)
-app.get('/privacy',wwstay.privacy)
-app.get('/team',wwstay.team)
-app.get('/leisure',wwstay.leisure)
+app.get('/', wwstay.home);
+app.get('/deals', wwstay.deals)
+app.get('/terms', wwstay.terms)
+app.get('/privacy', wwstay.privacy)
+app.get('/team', wwstay.team)
+app.get('/leisure', wwstay.leisure)
+app.get('/business', wwstay.business)
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
