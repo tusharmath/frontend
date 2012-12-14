@@ -1,17 +1,151 @@
-extends layout
+!!! 5
+html(lang="en")
+  head
+    meta(charset='utf-8')
+    meta(name="description", content="We provide accomodation solutions to business travellers")
+    meta(name="author", content="WWstay Inc")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel='shortcut icon', href='/favicon.ico')
+    title WWStay - Business &amp; Leisure Travel
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Exo:400,600,700')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Quicksand:700')
+    link(rel='stylesheet', href='http://fonts.googleapis.com/css?family=Maven+Pro:500')
+    link(rel='stylesheet', href='/fe/static/css/leisure.css')
 
-block content
-  .container.marketing
-    .row.mainMenulink
-      .span4
-        .mainMenuimage
-          a(href='#') BUSINESS TRAVEL
-      .span4
-        .mainMenuimage-2
-          a(href='#') LEISURE TRAVEL
-      .span4
-        .travelDeals
-          .travelDealsTitle
-            h1 Hong Kong @ 9999/-
 
+  body
+    .wrap
+      .navbar.navbar-inverse.navbar-fixed-top
+        .navbar-inner
+          .container
+            button.btn.btn-navbar(type='button', data-toggle='collapse', data-target='.nav-collapse')
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.brand(href='index.html') Bootstrap
+            .nav-collapse.collapse
+              ul.nav
+                li.miniFacebook
+                  a(href='./index.html') Facebook
+                li.miniTwitter
+                  a(href='./getting-started.html') Twitter
+                li.miniGplus
+                  a(href='./scaffolding.html') G+
+            #navbarContactarea
+              #navbarContactpre
+              .navbarContact
+                | CALL: 01234567890
+                span.contactOR or
+                | EMAIL:
+                a(href='mailto=travel@wwstay.com') TRAVEL@WWSTAY.COM
+
+
+      #myCarousel.carousel.slide.carousel-fade
+        .carousel-inner
+          .item.active
+            img(src='/fe/static/images/slide-01.png', alt='')
+              .container
+          .item
+            img(src='/fe/static/images/02.png', alt='')
+              .container
+          .item
+            img(src='/fe/static/images/03.png', alt='')
+              .container
+          .item
+            img(src='/fe/static/images/04.png', alt='')
+              .container
+      .carouselBorder
+
+      .container.marketing
+        .row.mainMenulink
+          .span4
+            .mainMenuimage
+              a(href='#') BUSINESS TRAVEL
+          .span4
+            .mainMenuimage-2
+              a(href='#') LEISURE TRAVEL
+          .span4
+            .travelDeals
+              .travelDealsTitle
+                h1 Hong Kong @ 9999/-
+
+        .contentContainer
+          .contentContainer-Topstyle
+          .span3
+            .well.sidebar-nav
+              ul.nav.nav-list
+                li.active
+                  a(href='#') Events & Destinations 
+                li
+                  a(href='#') Plan your Itinerary
+                li
+                  a(href='#') Unique Experiences
+          .span7
+            .leftShadow
+              .hero-unit
+                .hero-unitSpecial
+                  h1 Events & Destinations
+                  p
+                    | Our services come from deep domain knowledge. We not only give you the best savings on an ongoing basis, but also suggest accommodation based on convenience, proximity of work, etc. A combination of savings and knowledge make us the most authoritative travel partner to have. People typically save 15-20% on corporate accomodation on an average
+              .hero-unitBottomstyle
+              .apprentice-unit
+                h2 New York City Vacations
+                img(src='/fe/static/images/events/nyc_t.png', alt='')
+                .apprenticeUnit-Content
+                  .eventPrice
+                  .eventStars
+                  p
+                    | The first time you go to New York, go ahead and be a sight-seer-everyone should visit the Statue of Liberty, the Met, Times Square, etc.
+                  .eventMap
+                    img(src='/fe/static/images/events/map_t.png', alt='')
+                  p
+                    a.enquireButton(href='#') ENQUIRE NOW
+              .apprentice-unit
+                h2 New York City Vacations
+                img(src='/fe/static/images/events/nyc_t.png', alt='')
+                .apprenticeUnit-Content
+                  .eventPrice
+                  .eventStars
+                  p
+                    | The first time you go to New York, go ahead and be a sight-seer-everyone should visit the Statue of Liberty, the Met, Times Square, etc.
+                  .eventMap
+                    img(src='/fe/images/events/map_t.png', alt='')
+                  p
+                    a.enquireButton(href='#') ENQUIRE NOW
+
+
+    #footer
+      .thefooter
+        #footerLeft
+          .footerRow_01
+            ul
+              li.footerFb
+                a(href='#')
+              li.footerIn
+                a(href='#')
+              li.footerTw
+                a(href='#')
+          .footerRow_02
+            p
+              | © 2012 WWStay All Rights Reserved |
+              a(href='#') Fine Print
+        #footerRight
+          .footerRow_01_Right
+            ul
+              li
+                a(href='') SPECIAL OFFERS
+              li
+                a(href='') LEISURE TRAVEL
+              li
+                a(href='') BUSINESS TRAVEL
+          .footerRow_02_Right
+            ul
+              li
+                a(href='') HOME
+              li
+                a(href='') ABOUT
+              li
+                a(href='') NEWS & INSIGHTS
+              li
+                a(href='') CONTACTS
 
