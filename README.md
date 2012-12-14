@@ -1,15 +1,14 @@
 # Our rocking website
 
-Our awesome node powered frontend
+Our awesome nodejs powered frontend
 
 ## Dev setup
 
- * Install node
+ * Install nodejs
  * Install dependencies
         
         $ npm install
 
- * Run server (you can run with node, but nodemon picks up changes automagically)
+ * Run server 
 
-        $ sudo npm install -g nodemon
-        $ nodemon app.js
+        $ node app.js
