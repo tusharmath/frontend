@@ -194,11 +194,21 @@ blockquote {
   background: url('/fe/static/images/sprite-background.png') no-repeat -336px -610px;
   width: 263px;
   height: 314px;
+  -ms-transform:rotate(-9deg); /* IE 9 */
+  -moz-transform:rotate(-9deg); /* Firefox */
+  -webkit-transform:rotate(-9deg); /* Safari and Chrome */
+  -o-transform:rotate(-9deg);
+  transform:rotate(-9deg);
 }
 .marketing-landing #deals {
-  background: url('/fe/static/images/sprite-background.png') no-repeat -13px -947px;
-  width: 361px;
-  height: 313px;
+  background: url('/fe/static/images/sprite-background.png') no-repeat -621px -611px;
+  width: 263px;
+  height: 314px;
+  -ms-transform:rotate(7deg); /* IE 9 */
+  -moz-transform:rotate(7deg); /* Firefox */
+  -webkit-transform:rotate(7deg); /* Safari and Chrome */
+  -o-transform:rotate(7deg);
+  transform:rotate(7deg);
 }
 
 .marketing-generic #business-travel {
@@ -221,9 +231,8 @@ blockquote {
 
 .marketing-landing #deals h1 {
   text-align: center;
-  margin-top: 25px;
   font-size: 32px;
-  padding: 65px 0 10px;
+  padding: 35px 0 10px;
   font-weight: 700;
 }
 
@@ -233,8 +242,8 @@ blockquote {
 }
 
 .marketing-landing #deals li {
-  float: left;
-  margin: 0 3px 0 -2px;
+  float: right;
+  margin: 6px 30px 6px -2px;
   width: 150px;
   height: 100px;
   border: 2px #DEB97B solid;
@@ -244,6 +253,7 @@ blockquote {
 .marketing-landing #deals li img {
   max-width: 100%;
   height: auto;
+  width: 100%;
   border: 0;
 }
 
@@ -258,6 +268,8 @@ blockquote {
 
 .marketing-landing #deals .disclaimer {
   margin-left: 18px;
+  margin-top: 18px;
+  float: left;
 }
 
 /* Image is not visible when we inherit this rule */
@@ -339,7 +351,7 @@ blockquote {
 }
 
 #contactus, #testimonials, #twitter-feed {
-  background: url('/fe/static/images/sprite-background.png') no-repeat -627px -316px;
+  background: url('/fe/static/images/sprite-background.png') repeat-x -627px -316px;
 }
 
 #twitter-feed {
