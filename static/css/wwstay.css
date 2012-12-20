@@ -450,5 +450,10 @@ blockquote {
 .content-generic-container {
   background: url("/fe/static/images/content_bg.png") repeat scroll 0px 0px transparent;
   position: relative;
-  height: 1000px;
+  height: auto;
+}
+.region .caption {
+  text-align: center;
+  font-size: 1.5em;
+  padding-bottom: 10px;
 }
