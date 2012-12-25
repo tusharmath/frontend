@@ -1,3 +1,6 @@
+@import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
+
 h1 {
   font-family: 'Exo', sans-serif;
   color: white;
@@ -352,6 +355,7 @@ blockquote {
 
 #contactus, #testimonials, #twitter-feed {
   background: url('/fe/static/images/sprite-background.png') repeat-x -627px -316px;
+  background: url('/fe/static/images/PaperTextureheader-Small.png') repeat-x 0px 0px;
 }
 
 #twitter-feed {

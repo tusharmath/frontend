@@ -1,12 +1,32 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "app",
+  "version": "0.1.0",
+  "author": {
+    "name": "WWstay geek squad <dev@wwstay.com>"
+  },
+  "description": "Our awesome nodejs frontend",
+  "homepage": "http://wwstay.com",
   "private": true,
   "scripts": {
     "start": "node app"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wwstay/website.git"
+  },
   "dependencies": {
-    "express": "3.0.4",
-    "jade": "*"
-  }
+    "express": ">= 3.0.4",
+    "jade": ">= 0.27.7",
+    "grunt": ">= 0.3.17",
+    "grunt-css": "*"
+  },
+  "engines": {
+    "node": ">=0.8"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/wwstay/website/raw/master/LICENSE"
+    }
+  ]
 }

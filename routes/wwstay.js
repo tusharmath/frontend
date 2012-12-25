@@ -11,11 +11,11 @@ exports.privacy = function(req, res){
   res.render('privacy');
 };
 exports.team = function(req,res){
-	res.render('team')
+  res.render('team')
 }
 exports.leisure = function(req,res){
-	res.render('leisure')
+  res.render('leisure')
 }
 exports.business = function(req,res){
-	res.render('business')
+  res.render('business')
 }
