@@ -24,16 +24,6 @@ module.exports = function(grunt) {
         dest: 'dist/static/js/<%= pkg.name %>.js'
       }
     },
-    cssmin: {
-      plain: {
-        options: {
-          banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-            '<%= grunt.template.today("yyyy-mm-dd") %> */'
-        },
-        src: 'static/css/*.css',
-        dest: 'dist/static/css/<%= pkg.name %>.min.css'
-      }
-    },
     min: {
       src: ['<banner:meta.banner>', 'static/js/*.js'],
       dest: 'dist/static/js/<%= pkg.name %>.js'
@@ -61,8 +51,6 @@ module.exports = function(grunt) {
     },
     uglify: {}
   });
-
-  grunt.loadNpmTasks('grunt-css');
 
   // Default task.
   grunt.registerTask('default', 'lint test concat min');
