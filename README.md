@@ -14,6 +14,10 @@ Our awesome nodejs powered frontend
         
         $ npm install
 
+ * Whenever you add a new image to the sprite
+    
+        $ compass sprite "static/images/sprite/*.png" --force
+
  * Tell compass to watch changes
 
         $ compass watch
