@@ -4,8 +4,23 @@
 @import "_sprite";
 
 body {
-  background-color: #15ACCB;
-  height: 100%;
+  background-color:#35a3ab;
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
+
+  /* Mozilla Firefox */ 
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
+
+  /* Opera */ 
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
+
+  /* Webkit (Safari/Chrome 10) */ 
+  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #00A3EF));
+
+  /* Webkit (Chrome 11+) */ 
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
+
+  /* W3C Markup, IE10 Release Preview */ 
+  background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #00A3EF 100%);
 }
 
 h1 {
@@ -125,7 +140,7 @@ blockquote {
 }
 
 .marketing-landing {
-  margin-top: -900px;
+  margin-top: -100px;
 }
 .marketing-generic {
   margin-top: -1100px;
@@ -142,21 +157,6 @@ blockquote {
   height: 60px;
 }
 
-#marketing-landing-bg,
-#marketing-generic-bg {
-  margin: 0 auto;
-  position: relative;
-  z-index: -9;
-  margin-top: -60px;
-  height: 821px;
-  width: 1394;
-}
-#marketing-landing-bg {
-  background: url(/fe/static/images/contentBack.jpg) repeat;
-}
-#marketing-generic-bg {
-  background: url(/fe/static/images/contentBack-2.jpg) repeat;
-}
 .marketing-landing .bring-up a,
 .marketing-generic .bring-up a {
   height: 338px;
@@ -390,10 +390,8 @@ blockquote {
 
 #footer {
   height: 425px;
-  margin-top: -180px;
   background: url('/fe/static/images/footerBg.png') repeat-x;
   position: relative;
-  z-index: -1;
 }
 
 #footer .content {

@@ -16,10 +16,6 @@ $sprite-inline: false !default;
  // These variables control the generated sprite output
  // You can override them selectively before you import this file.
  
-   $sprite-bluerays-position: $sprite-position !default;
-   $sprite-bluerays-spacing:  $sprite-spacing !default;
-   $sprite-bluerays-repeat:   $sprite-repeat !default;
- 
    $sprite-chain-position: $sprite-position !default;
    $sprite-chain-spacing:  $sprite-spacing !default;
    $sprite-chain-repeat:   $sprite-repeat !default;
@@ -50,10 +46,6 @@ $sprite-inline: false !default;
  
 
  $sprite-sprites: sprite-map("sprite/*.png",
- 
-   $sprite-bluerays-position: $sprite-bluerays-position, 
-   $sprite-bluerays-spacing:  $sprite-bluerays-spacing, 
-   $sprite-bluerays-repeat:   $sprite-bluerays-repeat,
  
    $sprite-chain-position: $sprite-chain-position, 
    $sprite-chain-spacing:  $sprite-chain-spacing, 
@@ -136,5 +128,5 @@ $sprite-inline: false !default;
 
 // Generates a class for each sprited image.
 @mixin all-sprite-sprites($dimensions: $sprite-sprite-dimensions, $prefix: sprite-map-name($sprite-sprites), $offset-x: 0, $offset-y: 0) {
-  @include sprite-sprites(bluerays chain facebook gplus logo navbar suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
+  @include sprite-sprites(chain facebook gplus logo navbar suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
 }

@@ -5493,30 +5493,24 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-.sprite-sprite, .sprite-bluerays, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
-  background: url('/fe/static/images/sprite-s1bc296fd8a.png') no-repeat;
-}
-
-.sprite-bluerays {
-  background-position: 0 -230px;
-  height: 20px;
-  width: 82px;
+.sprite-sprite, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
+  background: url('/fe/static/images/sprite-s9d4c5ba7bc.png') no-repeat;
 }
 
 .sprite-chain {
-  background-position: 0 -276px;
+  background-position: 0 -256px;
   height: 60px;
   width: 32px;
 }
 
 .sprite-facebook {
-  background-position: 0 -336px;
+  background-position: 0 -316px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-gplus {
-  background-position: 0 -250px;
+  background-position: 0 -230px;
   height: 26px;
   width: 22px;
 }
@@ -5534,13 +5528,13 @@ a.label:hover, a.badge:hover {
 }
 
 .sprite-suitcase {
-  background-position: 0 -388px;
+  background-position: 0 -368px;
   height: 23px;
   width: 29px;
 }
 
 .sprite-twitter {
-  background-position: 0 -362px;
+  background-position: 0 -342px;
   height: 26px;
   width: 22px;
 }
@@ -5563,8 +5557,18 @@ a.label:hover, a.badge:hover {
 }
 
 body {
-  background-color: #15ACCB;
-  height: 100%;
+  background-color: #35a3ab;
+  background-image: -ms-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
+  /* Mozilla Firefox */
+  background-image: -moz-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
+  /* Opera */
+  background-image: -o-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
+  /* Webkit (Safari/Chrome 10) */
+  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, white), color-stop(1, #00a3ef));
+  /* Webkit (Chrome 11+) */
+  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
+  /* W3C Markup, IE10 Release Preview */
+  background-image: radial-gradient(ellipse farthest-corner at center, #ffffff 0%, #00a3ef 100%);
 }
 
 h1 {
@@ -5697,7 +5701,7 @@ blockquote {
 }
 
 .marketing-landing {
-  margin-top: -900px;
+  margin-top: -100px;
 }
 
 .marketing-generic {
@@ -5714,24 +5718,6 @@ blockquote {
   background: url(/fe/static/images/carouselBorder.png);
   background-repeat: repeat-x;
   height: 60px;
-}
-
-#marketing-landing-bg,
-#marketing-generic-bg {
-  margin: 0 auto;
-  position: relative;
-  z-index: -9;
-  margin-top: -60px;
-  height: 821px;
-  width: 1394;
-}
-
-#marketing-landing-bg {
-  background: url(/fe/static/images/contentBack.jpg) repeat;
-}
-
-#marketing-generic-bg {
-  background: url(/fe/static/images/contentBack-2.jpg) repeat;
 }
 
 .marketing-landing .bring-up a,
@@ -5992,10 +5978,8 @@ blockquote {
 
 #footer {
   height: 425px;
-  margin-top: -180px;
   background: url("/fe/static/images/footerBg.png") repeat-x;
   position: relative;
-  z-index: -1;
 }
 
 #footer .content {
