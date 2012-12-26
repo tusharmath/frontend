@@ -5559,15 +5559,10 @@ a.label:hover, a.badge:hover {
 body {
   background-color: #35a3ab;
   background-image: -ms-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  /* Mozilla Firefox */
   background-image: -moz-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  /* Opera */
   background-image: -o-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  /* Webkit (Safari/Chrome 10) */
   background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, white), color-stop(1, #00a3ef));
-  /* Webkit (Chrome 11+) */
   background-image: -webkit-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  /* W3C Markup, IE10 Release Preview */
   background-image: radial-gradient(ellipse farthest-corner at center, #ffffff 0%, #00a3ef 100%);
 }
 
@@ -5705,7 +5700,7 @@ blockquote {
 }
 
 .marketing-generic {
-  margin-top: -1100px;
+  margin-top: -400px;
 }
 
 .bring-up {
