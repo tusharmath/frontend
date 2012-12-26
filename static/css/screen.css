@@ -5493,6 +5493,80 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
+.sprite-sprite, .sprite-bluerays, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
+  background: url('/fe/static/images/sprite-s1bc296fd8a.png') no-repeat;
+}
+
+.sprite-bluerays {
+  background-position: 0 -230px;
+  height: 20px;
+  width: 82px;
+}
+
+.sprite-chain {
+  background-position: 0 -276px;
+  height: 60px;
+  width: 32px;
+}
+
+.sprite-facebook {
+  background-position: 0 -336px;
+  height: 26px;
+  width: 22px;
+}
+
+.sprite-gplus {
+  background-position: 0 -250px;
+  height: 26px;
+  width: 22px;
+}
+
+.sprite-logo {
+  background-position: 0 0;
+  height: 171px;
+  width: 261px;
+}
+
+.sprite-navbar {
+  background-position: 0 -171px;
+  height: 59px;
+  width: 302px;
+}
+
+.sprite-suitcase {
+  background-position: 0 -388px;
+  height: 23px;
+  width: 29px;
+}
+
+.sprite-twitter {
+  background-position: 0 -362px;
+  height: 26px;
+  width: 22px;
+}
+
+.sprite-navbar {
+  background-repeat: repeat-x;
+  width: 100%;
+}
+
+.sprite-logo {
+  float: left;
+  display: block;
+  height: 165px;
+  text-indent: -9999PX;
+}
+
+.sprite-suitcase {
+  float: left;
+  margin-right: 15px;
+}
+
+body {
+  background-color: #15ACCB;
+  height: 100%;
+}
+
 h1 {
   font-family: "Exo", sans-serif;
   color: white;
@@ -5522,19 +5596,6 @@ blockquote {
 
 .navbar-fixed-top {
   position: absolute;
-}
-
-.navbar-inverse .navbar-inner {
-  background: url(/fe/static/images/navbar-pattern.png);
-  background-repeat: repeat-x;
-}
-
-.brand {
-  background: url(/fe/static/images/sprite-background.png);
-  background-position: 0 0;
-  height: 160px;
-  width: 250px;
-  text-indent: -9999PX;
 }
 
 .navbar .brand {
@@ -5570,30 +5631,10 @@ blockquote {
   height: 25px;
 }
 
-#fb {
-  background: url(/fe/static/images/sprite-background.png) no-repeat -27px -180px;
-}
-
-#twitter {
-  background: url(/fe/static/images/sprite-background.png) no-repeat -56px -180px;
-}
-
-#gplus {
-  background: url("/fe/static/images/sprite-background.png") no-repeat -86px -180px;
-}
-
 #contact-details {
   float: right;
   margin-top: 75px;
   margin-right: -70px;
-}
-
-#contact-suitcase {
-  float: left;
-  margin-right: 15px;
-  background: url("/fe/static/images/sprite-background.png") no-repeat -118px -223px;
-  width: 33px;
-  height: 22px;
 }
 
 #contact-details .content {
@@ -5885,17 +5926,18 @@ blockquote {
   height: 40px;
 }
 
-#contactus, #testimonials, #twitter-feed {
-  background: url("/fe/static/images/sprite-background.png") repeat-x -627px -316px;
-  background: url("/fe/static/images/PaperTextureheader-Small.png") repeat-x 0px 0px;
-}
-
 #twitter-feed {
   height: 255px;
 }
 
 .press .content {
   margin: 20px;
+}
+
+.paper {
+  background: no-repeat url(//s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png) 0 0;
+  background-color: #EBEBEB;
+  background-repeat: repeat;
 }
 
 .press h4 {

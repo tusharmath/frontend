@@ -1,0 +1,26 @@
+@import "sprites/_sprite";
+
+// Overrides
+$sprite-sprite-dimensions: true;
+$sprite-position: 20px;
+
+$sprite-paper-long-dimensions: false;
+
+@include all-sprite-sprites;
+
+.sprite-navbar {
+  background-repeat: repeat-x;
+  width: 100%;
+}
+
+.sprite-logo {
+  float: left;
+  display: block;
+  height: 165px;
+  text-indent: -9999PX;
+}
+
+.sprite-suitcase {
+  float: left;
+  margin-right: 15px;
+}

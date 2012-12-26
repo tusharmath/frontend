@@ -1,6 +1,13 @@
 @import "compass_twitter_bootstrap";
 @import "compass_twitter_bootstrap_responsive";
 
+@import "_sprite";
+
+body {
+  background-color: #15ACCB;
+  height: 100%;
+}
+
 h1 {
   font-family: 'Exo', sans-serif;
   color: white;
@@ -27,18 +34,6 @@ blockquote {
 
 .navbar-fixed-top {
   position: absolute;
-}
-.navbar-inverse .navbar-inner {
-  background: url(/fe/static/images/navbar-pattern.png);
-  background-repeat: repeat-x;
-}
-
-.brand {
-  background: url(/fe/static/images/sprite-background.png);
-  background-position: 0 0;
-  height: 160px;
-  width: 250px;
-  text-indent: -9999PX;
 }
 
 .navbar .brand {
@@ -74,27 +69,10 @@ blockquote {
   height: 25px;
 }
 
-#fb {
-  background: url(/fe/static/images/sprite-background.png) no-repeat -27px -180px;
-}
-#twitter {
-  background: url(/fe/static/images/sprite-background.png) no-repeat -56px -180px;
-}
-#gplus {
-  background: url('/fe/static/images/sprite-background.png') no-repeat -86px -180px;
-}
-
 #contact-details {
   float: right;
   margin-top: 75px;
   margin-right: -70px;
-}
-#contact-suitcase {
-  float: left;
-  margin-right: 15px;
-  background: url('/fe/static/images/sprite-background.png') no-repeat -118px -223px;
-  width: 33px;
-  height: 22px;
 }
 #contact-details .content {
   float: right;
@@ -353,17 +331,18 @@ blockquote {
   height: 40px;
 }
 
-#contactus, #testimonials, #twitter-feed {
-  background: url('/fe/static/images/sprite-background.png') repeat-x -627px -316px;
-  background: url('/fe/static/images/PaperTextureheader-Small.png') repeat-x 0px 0px;
-}
-
 #twitter-feed {
   height: 255px;
 }
 
 .press .content {
   margin: 20px;
+}
+
+.paper {
+  background: no-repeat url(//s.ytimg.com/yt/imgbin/www-refreshbg-vflC3wnbM.png) 0 0;
+  background-color: #EBEBEB;
+  background-repeat: repeat;
 }
 
 .press h4 {

@@ -1,8 +1,9 @@
 # Require any additional compass plugins here.
 $stdout.sync = true
+project_type = "stand_alone"
 
 # Set this to the root of your project when deployed:
-http_path = "/"
+http_path = "/fe/"
 css_dir = "static/css"
 sass_dir = "static/scss"
 images_dir = "static/images"
