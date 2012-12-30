@@ -5735,28 +5735,12 @@ blockquote {
   background: url("/fe/static/images/sprite-background.png") no-repeat -336px -610px;
   width: 263px;
   height: 314px;
-  -ms-transform: rotate(-9deg);
-  /* IE 9 */
-  -moz-transform: rotate(-9deg);
-  /* Firefox */
-  -webkit-transform: rotate(-9deg);
-  /* Safari and Chrome */
-  -o-transform: rotate(-9deg);
-  transform: rotate(-9deg);
 }
 
 .marketing-landing #deals {
   background: url("/fe/static/images/sprite-background.png") no-repeat -621px -611px;
   width: 263px;
   height: 314px;
-  -ms-transform: rotate(7deg);
-  /* IE 9 */
-  -moz-transform: rotate(7deg);
-  /* Firefox */
-  -webkit-transform: rotate(7deg);
-  /* Safari and Chrome */
-  -o-transform: rotate(7deg);
-  transform: rotate(7deg);
 }
 
 .marketing-generic #business-travel {
