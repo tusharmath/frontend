@@ -1,7 +1,13 @@
-var pg = require('pg');
+var pg = require('pg'),
+    config = {
+      user: 'admin',
+      password: process.env.PG_ADMIN_PASS,
+      database: 'bookingdb',
+      host: 'localhost',
+      port: 5432
+    },
+    client = new pg.Client(config);
 
-var conSettings = "tcp://admin:xxx@localhost/bookingdb";
-var client = new pg.Client(conSettings);
 client.connect();	
 
 exports.home = function(req, res){
@@ -11,7 +17,7 @@ exports.home = function(req, res){
   	  console.log("Database Error " + err);
       } else {
         for (var i = 0 ; i < result.rows.length; i++ ){
-		  //console.log(result.rows[i].name);
+		  // console.log(result.rows[i].name);
 		  country.push(result.rows[i].name)
 	    }  	
        }
