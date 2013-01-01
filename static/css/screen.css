@@ -6018,7 +6018,7 @@ blockquote {
 }
 
 .content-generic-container {
-  background: url("/fe/static/images/content_bg.png") repeat scroll 0px 0px transparent;
+  background: url("/fe/static/images/white_bg.png") repeat scroll 0px 0px transparent;
   position: relative;
   height: auto;
 }
