@@ -1,0 +1,7 @@
+@import "landing/*.png";
+
+// Overrides
+$landing-sprite-dimensions: true;
+$landing-position: 20px;
+
+@include all-landing-sprites;

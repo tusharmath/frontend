@@ -1,0 +1,108 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$landing-sprite-base-class: ".landing-sprite" !default;
+$landing-sprite-dimensions: false !default;
+$landing-position: 0% !default;
+$landing-spacing: 0 !default;
+$landing-repeat: no-repeat !default;
+$landing-prefix: '' !default;
+$landing-clean-up: true !default;
+$landing-layout:vertical !default;
+$landing-inline: false !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $landing-business-position: $landing-position !default;
+   $landing-business-spacing:  $landing-spacing !default;
+   $landing-business-repeat:   $landing-repeat !default;
+ 
+   $landing-deals-position: $landing-position !default;
+   $landing-deals-spacing:  $landing-spacing !default;
+   $landing-deals-repeat:   $landing-repeat !default;
+ 
+   $landing-leisure-position: $landing-position !default;
+   $landing-leisure-spacing:  $landing-spacing !default;
+   $landing-leisure-repeat:   $landing-repeat !default;
+ 
+   $landing-recent_destination-position: $landing-position !default;
+   $landing-recent_destination-spacing:  $landing-spacing !default;
+   $landing-recent_destination-repeat:   $landing-repeat !default;
+ 
+
+ $landing-sprites: sprite-map("landing/*.png",
+ 
+   $landing-business-position: $landing-business-position, 
+   $landing-business-spacing:  $landing-business-spacing, 
+   $landing-business-repeat:   $landing-business-repeat,
+ 
+   $landing-deals-position: $landing-deals-position, 
+   $landing-deals-spacing:  $landing-deals-spacing, 
+   $landing-deals-repeat:   $landing-deals-repeat,
+ 
+   $landing-leisure-position: $landing-leisure-position, 
+   $landing-leisure-spacing:  $landing-leisure-spacing, 
+   $landing-leisure-repeat:   $landing-leisure-repeat,
+ 
+   $landing-recent_destination-position: $landing-recent_destination-position, 
+   $landing-recent_destination-spacing:  $landing-recent_destination-spacing, 
+   $landing-recent_destination-repeat:   $landing-recent_destination-repeat,
+ 
+ $layout: $landing-layout,
+ $cleanup: $landing-clean-up
+ );
+
+
+// All sprites should extend this class
+// The landing-sprite mixin will do so for you.
+@if $landing-inline {
+  #{$landing-sprite-base-class} {
+    background-image: inline-sprite($landing-sprites);
+  } 
+} @else {
+  #{$landing-sprite-base-class} {
+    background: $landing-sprites no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function landing-sprite-width($name) {
+    $file: sprite_file($landing-sprites, $name);
+    @return image-width($file);
+  }
+
+  @function landing-sprite-height($name) {
+    $file: sprite_file($landing-sprites, $name);
+    @return image-height($file);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin landing-sprite-dimensions($name) {
+  @include sprite-dimensions($landing-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin landing-sprite-position($name, $offset-x: 0, $offset-y: 0) {
+  @include sprite-background-position($landing-sprites, $name, $offset-x, $offset-y)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin landing-sprite($name, $dimensions: $landing-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+  @extend #{$landing-sprite-base-class};
+  @include sprite($landing-sprites, $name, $dimensions, $offset-x, $offset-y)
+}
+
+@mixin landing-sprites($sprite-names, $dimensions: $landing-sprite-dimensions, $prefix: sprite-map-name($landing-sprites), $offset-x: 0, $offset-y: 0) {
+  @include sprites($landing-sprites, $sprite-names, $landing-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y)
+}
+
+// Generates a class for each sprited image.
+@mixin all-landing-sprites($dimensions: $landing-sprite-dimensions, $prefix: sprite-map-name($landing-sprites), $offset-x: 0, $offset-y: 0) {
+  @include landing-sprites(business deals leisure recent_destination, $dimensions, $prefix, $offset-x, $offset-y);
+}

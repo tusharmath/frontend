@@ -2,6 +2,7 @@
 @import "compass_twitter_bootstrap_responsive";
 
 @import "_sprite";
+@import "_landing";
 
 body {
   background: url("/fe/static/images/blue_bg.png") repeat scroll 0px 0px transparent;
@@ -148,23 +149,6 @@ blockquote {
   display: block;
   text-indent: -9999px;
 }
-.marketing-landing #business-travel {
-  margin: 0 10px;
-  background: url(/fe/static/images/sprite-background.png) no-repeat -29px -598px;
-  width: 288px;
-  height: 338px;
-}
-.marketing-landing #leisure-travel {
-  margin: 10px;
-  background: url('/fe/static/images/sprite-background.png') no-repeat -336px -610px;
-  width: 263px;
-  height: 314px;
-}
-.marketing-landing #deals {
-  background: url('/fe/static/images/sprite-background.png') no-repeat -621px -611px;
-  width: 263px;
-  height: 314px;
-}
 
 .marketing-generic #business-travel {
   background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -9px -8px transparent;
@@ -230,12 +214,6 @@ blockquote {
 /* Image is not visible when we inherit this rule */
 .marketing-landing #deals ul li a {
   display: inline;
-}
-
-.recent-destinations-title {
-  background: url('/fe/static/images/sprite-background.png') no-repeat -322px -13px;
-  width: 942px;
-  height: 128px;
 }
 
 .recent-destinations {

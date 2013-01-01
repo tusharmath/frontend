@@ -17,6 +17,7 @@ Our awesome nodejs powered frontend
  * Whenever you add a new image to the sprite
     
         $ compass sprite "static/images/sprite/*.png" --force
+        $ compass sprite "static/images/landing/*.png" --force
 
  * Tell compass to watch changes
 

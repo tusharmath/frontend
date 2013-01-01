@@ -5581,6 +5581,34 @@ a.label:hover, a.badge:hover {
   margin-right: 15px;
 }
 
+.landing-sprite, .landing-business, .landing-deals, .landing-leisure, .landing-recent_destination {
+  background: url('/fe/static/images/landing-sb790876331.png') no-repeat;
+}
+
+.landing-business {
+  background-position: 0 -308px;
+  height: 320px;
+  width: 270px;
+}
+
+.landing-deals {
+  background-position: 0 0;
+  height: 308px;
+  width: 259px;
+}
+
+.landing-leisure {
+  background-position: 0 -628px;
+  height: 308px;
+  width: 259px;
+}
+
+.landing-recent_destination {
+  background-position: 0 -936px;
+  height: 131px;
+  width: 940px;
+}
+
 body {
   background: url("/fe/static/images/blue_bg.png") repeat scroll 0px 0px transparent;
 }
@@ -5742,26 +5770,6 @@ blockquote {
   text-indent: -9999px;
 }
 
-.marketing-landing #business-travel {
-  margin: 0 10px;
-  background: url(/fe/static/images/sprite-background.png) no-repeat -29px -598px;
-  width: 288px;
-  height: 338px;
-}
-
-.marketing-landing #leisure-travel {
-  margin: 10px;
-  background: url("/fe/static/images/sprite-background.png") no-repeat -336px -610px;
-  width: 263px;
-  height: 314px;
-}
-
-.marketing-landing #deals {
-  background: url("/fe/static/images/sprite-background.png") no-repeat -621px -611px;
-  width: 263px;
-  height: 314px;
-}
-
 .marketing-generic #business-travel {
   background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -9px -8px transparent;
   height: 102px;
@@ -5828,12 +5836,6 @@ blockquote {
 /* Image is not visible when we inherit this rule */
 .marketing-landing #deals ul li a {
   display: inline;
-}
-
-.recent-destinations-title {
-  background: url("/fe/static/images/sprite-background.png") no-repeat -322px -13px;
-  width: 942px;
-  height: 128px;
 }
 
 .recent-destinations {
