@@ -25,7 +25,7 @@ app.get('/', wwstay.home);
 app.get('/deals', wwstay.deals)
 app.get('/terms', wwstay.terms)
 app.get('/privacy', wwstay.privacy)
-app.get('/team', wwstay.team)
+app.get('/about', wwstay.about)
 app.get('/leisure', wwstay.leisure)
 app.get('/business', wwstay.business)
 
