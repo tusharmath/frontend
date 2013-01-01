@@ -5494,59 +5494,59 @@ a.label:hover, a.badge:hover {
   }
 }
 .sprite-sprite, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
-  background: url('/fe/static/images/sprite-s0920417e1c.png') no-repeat;
+  background: url('/fe/static/images/sprite-s9bb84d97b5.png') no-repeat;
 }
 
 .sprite-chain {
-  background-position: 0 -532px;
+  background-position: 0 -533px;
   height: 60px;
   width: 32px;
 }
 
 .sprite-facebook {
-  background-position: 0 -592px;
+  background-position: 0 -593px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-gplus {
-  background-position: 0 -506px;
+  background-position: 0 -507px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-logo-small {
-  background-position: 0 -171px;
+  background-position: 0 -231px;
   height: 152px;
   width: 222px;
 }
 
 .sprite-logo-smaller {
-  background-position: 0 -323px;
+  background-position: 0 -383px;
   height: 124px;
   width: 187px;
 }
 
 .sprite-logo {
-  background-position: 0 0;
+  background-position: 0 -60px;
   height: 171px;
   width: 261px;
 }
 
 .sprite-navbar {
-  background-position: 0 -447px;
-  height: 59px;
-  width: 302px;
+  background-position: 0 0;
+  height: 60px;
+  width: 1280px;
 }
 
 .sprite-suitcase {
-  background-position: 0 -644px;
+  background-position: 0 -645px;
   height: 23px;
   width: 29px;
 }
 
 .sprite-twitter {
-  background-position: 0 -618px;
+  background-position: 0 -619px;
   height: 26px;
   width: 22px;
 }
