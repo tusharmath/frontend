@@ -142,30 +142,11 @@ blockquote {
   height: 60px;
 }
 
-.marketing-landing .bring-up a,
-.marketing-generic .bring-up a {
+.marketing-landing .bring-up a {
   height: 338px;
   width: 288px;
   display: block;
   text-indent: -9999px;
-}
-
-.marketing-generic #business-travel {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -9px -8px transparent;
-  height: 102px;
-  margin: 0 10px;
-  width: 279px;
-}
-.marketing-generic #leisure-travel {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -308px -9px transparent;
-  height: 88px;
-  margin: 10px;
-  width: 293px;
-}
-.marketing-generic #deals {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -618px -9px transparent;
-  height: 103px;
-  width: 342px;
 }
 
 .marketing-landing #deals h1 {
@@ -371,11 +352,6 @@ blockquote {
   color: #C3188D;
 }
 
-.paper-torn-down {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -16px -136px transparent;
-  height: 56px;
-  margin-top: -5px;
-}
 .content-generic-container {
   background: url("/fe/static/images/white_bg.png") repeat scroll 0px 0px transparent;
   position: relative;
@@ -526,4 +502,17 @@ blockquote {
   left:0;
   opacity:1;
   z-index:1;
+}
+
+.sprite-bandage a {
+  font-size: 2.1em;
+  color: #DAC8A7;
+  position: absolute;
+  top: 50px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.sprite-bandage a:hover {
+  text-decoration: none;
 }

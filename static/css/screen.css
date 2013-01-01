@@ -5493,24 +5493,30 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-.sprite-sprite, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
-  background: url('/fe/static/images/sprite-s9bb84d97b5.png') no-repeat;
+.sprite-sprite, .sprite-bandage, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
+  background: url('/fe/static/images/sprite-s7c66203958.png') no-repeat;
+}
+
+.sprite-bandage {
+  background-position: 0 -507px;
+  height: 116px;
+  width: 296px;
 }
 
 .sprite-chain {
-  background-position: 0 -533px;
+  background-position: 0 -649px;
   height: 60px;
   width: 32px;
 }
 
 .sprite-facebook {
-  background-position: 0 -593px;
+  background-position: 0 -709px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-gplus {
-  background-position: 0 -507px;
+  background-position: 0 -623px;
   height: 26px;
   width: 22px;
 }
@@ -5540,13 +5546,13 @@ a.label:hover, a.badge:hover {
 }
 
 .sprite-suitcase {
-  background-position: 0 -645px;
+  background-position: 0 -761px;
   height: 23px;
   width: 29px;
 }
 
 .sprite-twitter {
-  background-position: 0 -619px;
+  background-position: 0 -735px;
   height: 26px;
   width: 22px;
 }
@@ -5579,6 +5585,18 @@ a.label:hover, a.badge:hover {
 .sprite-suitcase {
   float: left;
   margin-right: 15px;
+}
+
+.sprite-bandage {
+  /* http://css-tricks.com/adding-stroke-to-web-text/ */
+  /* http://css-tricks.com/examples/TextStroke/ */
+  /* WebKit (Safari/Chrome) Only */
+  -webkit-text-stroke: 1px black;
+  /* If we weren't using text-shadow, we'd set a fallback color
+     and use this to set color instead
+    -webkit-text-fill-color: white; */
+  color: white;
+  text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 .landing-sprite, .landing-business, .landing-deals, .landing-leisure, .landing-recent_destination {
@@ -5762,32 +5780,11 @@ blockquote {
   height: 60px;
 }
 
-.marketing-landing .bring-up a,
-.marketing-generic .bring-up a {
+.marketing-landing .bring-up a {
   height: 338px;
   width: 288px;
   display: block;
   text-indent: -9999px;
-}
-
-.marketing-generic #business-travel {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -9px -8px transparent;
-  height: 102px;
-  margin: 0 10px;
-  width: 279px;
-}
-
-.marketing-generic #leisure-travel {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -308px -9px transparent;
-  height: 88px;
-  margin: 10px;
-  width: 293px;
-}
-
-.marketing-generic #deals {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -618px -9px transparent;
-  height: 103px;
-  width: 342px;
 }
 
 .marketing-landing #deals h1 {
@@ -6007,12 +6004,6 @@ blockquote {
   color: #C3188D;
 }
 
-.paper-torn-down {
-  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -16px -136px transparent;
-  height: 56px;
-  margin-top: -5px;
-}
-
 .content-generic-container {
   background: url("/fe/static/images/white_bg.png") repeat scroll 0px 0px transparent;
   position: relative;
@@ -6182,4 +6173,17 @@ blockquote {
   left: 0;
   opacity: 1;
   z-index: 1;
+}
+
+.sprite-bandage a {
+  font-size: 2.1em;
+  color: #DAC8A7;
+  position: absolute;
+  top: 50px;
+  padding-left: 10px;
+  text-decoration: none;
+}
+
+.sprite-bandage a:hover {
+  text-decoration: none;
 }
