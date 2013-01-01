@@ -28,6 +28,14 @@ $sprite-inline: false !default;
    $sprite-gplus-spacing:  $sprite-spacing !default;
    $sprite-gplus-repeat:   $sprite-repeat !default;
  
+   $sprite-logo-small-position: $sprite-position !default;
+   $sprite-logo-small-spacing:  $sprite-spacing !default;
+   $sprite-logo-small-repeat:   $sprite-repeat !default;
+ 
+   $sprite-logo-smaller-position: $sprite-position !default;
+   $sprite-logo-smaller-spacing:  $sprite-spacing !default;
+   $sprite-logo-smaller-repeat:   $sprite-repeat !default;
+ 
    $sprite-logo-position: $sprite-position !default;
    $sprite-logo-spacing:  $sprite-spacing !default;
    $sprite-logo-repeat:   $sprite-repeat !default;
@@ -58,6 +66,14 @@ $sprite-inline: false !default;
    $sprite-gplus-position: $sprite-gplus-position, 
    $sprite-gplus-spacing:  $sprite-gplus-spacing, 
    $sprite-gplus-repeat:   $sprite-gplus-repeat,
+ 
+   $sprite-logo-small-position: $sprite-logo-small-position, 
+   $sprite-logo-small-spacing:  $sprite-logo-small-spacing, 
+   $sprite-logo-small-repeat:   $sprite-logo-small-repeat,
+ 
+   $sprite-logo-smaller-position: $sprite-logo-smaller-position, 
+   $sprite-logo-smaller-spacing:  $sprite-logo-smaller-spacing, 
+   $sprite-logo-smaller-repeat:   $sprite-logo-smaller-repeat,
  
    $sprite-logo-position: $sprite-logo-position, 
    $sprite-logo-spacing:  $sprite-logo-spacing, 
@@ -128,5 +144,5 @@ $sprite-inline: false !default;
 
 // Generates a class for each sprited image.
 @mixin all-sprite-sprites($dimensions: $sprite-sprite-dimensions, $prefix: sprite-map-name($sprite-sprites), $offset-x: 0, $offset-y: 0) {
-  @include sprite-sprites(chain facebook gplus logo navbar suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
+  @include sprite-sprites(chain facebook gplus logo-small logo-smaller logo navbar suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
 }

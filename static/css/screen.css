@@ -5493,26 +5493,38 @@ a.label:hover, a.badge:hover {
     overflow: visible !important;
   }
 }
-.sprite-sprite, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
-  background: url('/fe/static/images/sprite-s9d4c5ba7bc.png') no-repeat;
+.sprite-sprite, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-suitcase, .sprite-twitter {
+  background: url('/fe/static/images/sprite-s0920417e1c.png') no-repeat;
 }
 
 .sprite-chain {
-  background-position: 0 -256px;
+  background-position: 0 -532px;
   height: 60px;
   width: 32px;
 }
 
 .sprite-facebook {
-  background-position: 0 -316px;
+  background-position: 0 -592px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-gplus {
-  background-position: 0 -230px;
+  background-position: 0 -506px;
   height: 26px;
   width: 22px;
+}
+
+.sprite-logo-small {
+  background-position: 0 -171px;
+  height: 152px;
+  width: 222px;
+}
+
+.sprite-logo-smaller {
+  background-position: 0 -323px;
+  height: 124px;
+  width: 187px;
 }
 
 .sprite-logo {
@@ -5522,19 +5534,19 @@ a.label:hover, a.badge:hover {
 }
 
 .sprite-navbar {
-  background-position: 0 -171px;
+  background-position: 0 -447px;
   height: 59px;
   width: 302px;
 }
 
 .sprite-suitcase {
-  background-position: 0 -368px;
+  background-position: 0 -644px;
   height: 23px;
   width: 29px;
 }
 
 .sprite-twitter {
-  background-position: 0 -342px;
+  background-position: 0 -618px;
   height: 26px;
   width: 22px;
 }
@@ -5544,11 +5556,24 @@ a.label:hover, a.badge:hover {
   width: 100%;
 }
 
-.sprite-logo {
+.sprite-logo,
+.sprite-logo-small,
+.sprite-logo-smaller {
   float: left;
   display: block;
-  height: 165px;
   text-indent: -9999PX;
+}
+
+.sprite-logo {
+  height: 165px;
+}
+
+.sprite-logo-small {
+  height: 152px;
+}
+
+.sprite-logo-smaller {
+  height: 124px;
 }
 
 .sprite-suitcase {

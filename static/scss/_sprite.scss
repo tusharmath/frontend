@@ -13,11 +13,24 @@ $sprite-paper-long-dimensions: false;
   width: 100%;
 }
 
-.sprite-logo {
+.sprite-logo,
+.sprite-logo-small,
+.sprite-logo-smaller {
   float: left;
   display: block;
-  height: 165px;
   text-indent: -9999PX;
+}
+
+.sprite-logo {
+  height: 165px;
+}
+
+.sprite-logo-small {
+  height: 152px;
+}
+
+.sprite-logo-smaller {
+  height: 124px;
 }
 
 .sprite-suitcase {
