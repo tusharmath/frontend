@@ -4,13 +4,7 @@
 @import "_sprite";
 
 body {
-  background-color:#35a3ab;
-  background-image: -ms-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
-  background-image: -moz-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
-  background-image: -o-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, #FFFFFF), color-stop(1, #00A3EF));
-  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, #FFFFFF 0%, #00A3EF 100%);
-  background-image: radial-gradient(ellipse farthest-corner at center, #FFFFFF 0%, #00A3EF 100%);
+  background: url("/fe/static/images/blue_bg.png") repeat scroll 0px 0px transparent;
 }
 
 h1 {

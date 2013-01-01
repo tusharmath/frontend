@@ -5582,13 +5582,7 @@ a.label:hover, a.badge:hover {
 }
 
 body {
-  background-color: #35a3ab;
-  background-image: -ms-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  background-image: -moz-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  background-image: -o-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  background-image: -webkit-gradient(radial, center center, 0, center center, 497, color-stop(0, white), color-stop(1, #00a3ef));
-  background-image: -webkit-radial-gradient(center, ellipse farthest-corner, white 0%, #00a3ef 100%);
-  background-image: radial-gradient(ellipse farthest-corner at center, #ffffff 0%, #00a3ef 100%);
+  background: url("/fe/static/images/blue_bg.png") repeat scroll 0px 0px transparent;
 }
 
 h1 {
