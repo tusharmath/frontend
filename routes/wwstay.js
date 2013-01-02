@@ -20,9 +20,9 @@ exports.home = function(req, res) {
         country.push(result.rows[i].name)
       }
       return res.render('home', { country: country });
-    });
-  }
-  return res.render('home'); // show error or home page?
+    }
+    return res.render('home'); // show error or home page?
+  });
 };
 
 exports.deals = function(req, res) {
