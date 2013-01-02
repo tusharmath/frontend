@@ -6004,10 +6004,10 @@ blockquote {
   color: #C3188D;
 }
 
-.content-generic-container {
-  background: url("/fe/static/images/white_bg.png") repeat scroll 0px 0px transparent;
+.white-bg {
+  background: white;
+  opacity: 0.9;
   position: relative;
-  height: auto;
 }
 
 .region .caption {
