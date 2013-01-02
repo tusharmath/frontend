@@ -5,14 +5,28 @@ block content
     div.row-fluid.vspace-two
       div.span4
         div.well.sidebar-nav
-          ul.nav.nav-list
+          ul.nav.nav-pills.nav-stacked
+            li.nav-header Your holiday at your pace
             li.active
-              a(href="#") Events & Destinations
+              a(href="#events-destinations", data-toggle='tab') Events &amp; destinations
             li
-              a(href="#") Plan your Itinerary
+              a(href="#plan-itinerary", data-toggle='tab') Plan your itinerary
             li
-              a(href="#") Unique Experiences
-      div.span8
-        div.hero-unit
-          h1 Events &amp; Destinations
-          p Our services come from deep domain knowledge. We not only give you the best savings on an ongoing basis, but also suggest accommodation based on convenience, proximity of work, etc. A combination of savings and knowledge make us the most authoritative travel partner to have. People typically save 15-20% on corporate accomodation on an average
+              a(href="#unique-experiences", data-toggle='tab') Unique experiences
+      div.span8.well
+        div.tab-content
+          div.tab-pane.active#events-destinations
+            h2 Events &amp; destinations
+            hr
+            img(src='http://farm7.staticflickr.com/6189/6139871568_7754f7d6d8_m_d.jpg', alt='Events & destinations').pull-right.thumbnail
+            p We have helped corporates organize conferences and events around the world.  We can help you plan your event end to end or just handle the accommodation aspect of it.
+          div.tab-pane#plan-itinerary
+            h2 Plan your itinerary
+            hr
+            img(src='http://farm3.staticflickr.com/2234/2344196743_02bc6d14d4_m_d.jpg', alt='Plan your itinerary').pull-right.thumbnail
+            p We can help you plan your itinerary and execute it.  We have worked with guests whose budget is fixed, whose dates are fixed or whose destinations are fixed.  Or who just want to back-pack.  We can plan holidays from Kerala backwaters to adventure tours in New Zealand.
+          div.tab-pane#unique-experiences
+            h2 Unique experiences
+            hr
+            img(src='http://farm3.staticflickr.com/2459/3960527305_4b012f2d9b_m_d.jpg', alt='Unique experience').pull-right.thumbnail
+            p We can help you plan your itinerary and execute it.  We have worked with guests whose budget is fixed, whose dates are fixed or whose destinations are fixed.  Or who just want to back-pack.  We can plan holidays from Kerala backwaters to adventure tours in New Zealand.
