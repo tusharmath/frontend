@@ -5599,8 +5599,14 @@ a.label:hover, a.badge:hover {
   text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-.team-sprite, .team-globe, .team-helna, .team-nitin-use, .team-nitin, .team-pointerBG, .team-pradip, .team-suprita, .team-sushant, .team-test {
-  background: url('/fe/static/images/team-s8938dca3cf.png') no-repeat;
+.team-sprite, .team-carlos, .team-globe, .team-helna, .team-nitin-use, .team-nitin, .team-pointerBG, .team-pradip, .team-suprita, .team-sushant, .team-test {
+  background: url('/fe/static/images/team-sc2b98228fe.png') no-repeat;
+}
+
+.team-carlos {
+  background-position: 0 -427px;
+  height: 103px;
+  width: 72px;
 }
 
 .team-globe {
@@ -5610,31 +5616,31 @@ a.label:hover, a.badge:hover {
 }
 
 .team-helna {
-  background-position: 0 -517px;
+  background-position: 0 -620px;
   height: 91px;
   width: 72px;
 }
 
 .team-nitin-use {
-  background-position: 0 -774px;
+  background-position: 0 -877px;
   height: 97px;
   width: 80px;
 }
 
 .team-nitin {
-  background-position: 0 -693px;
+  background-position: 0 -796px;
   height: 81px;
   width: 72px;
 }
 
 .team-pointerBG {
-  background-position: 0 -934px;
+  background-position: 0 -1037px;
   height: 97px;
   width: 80px;
 }
 
 .team-pradip {
-  background-position: 0 -608px;
+  background-position: 0 -711px;
   height: 85px;
   width: 72px;
 }
@@ -5646,13 +5652,13 @@ a.label:hover, a.badge:hover {
 }
 
 .team-sushant {
-  background-position: 0 -427px;
+  background-position: 0 -530px;
   height: 90px;
   width: 72px;
 }
 
 .team-test {
-  background-position: 0 -871px;
+  background-position: 0 -974px;
   height: 63px;
   width: 50px;
 }

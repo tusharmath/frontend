@@ -16,6 +16,10 @@ $team-inline: false !default;
  // These variables control the generated sprite output
  // You can override them selectively before you import this file.
  
+   $team-carlos-position: $team-position !default;
+   $team-carlos-spacing:  $team-spacing !default;
+   $team-carlos-repeat:   $team-repeat !default;
+ 
    $team-globe-position: $team-position !default;
    $team-globe-spacing:  $team-spacing !default;
    $team-globe-repeat:   $team-repeat !default;
@@ -54,6 +58,10 @@ $team-inline: false !default;
  
 
  $team-sprites: sprite-map("team/*.png",
+ 
+   $team-carlos-position: $team-carlos-position, 
+   $team-carlos-spacing:  $team-carlos-spacing, 
+   $team-carlos-repeat:   $team-carlos-repeat,
  
    $team-globe-position: $team-globe-position, 
    $team-globe-spacing:  $team-globe-spacing, 
@@ -144,5 +152,5 @@ $team-inline: false !default;
 
 // Generates a class for each sprited image.
 @mixin all-team-sprites($dimensions: $team-sprite-dimensions, $prefix: sprite-map-name($team-sprites), $offset-x: 0, $offset-y: 0) {
-  @include team-sprites(globe helna nitin-use nitin pointerBG pradip suprita sushant test, $dimensions, $prefix, $offset-x, $offset-y);
+  @include team-sprites(carlos globe helna nitin-use nitin pointerBG pradip suprita sushant test, $dimensions, $prefix, $offset-x, $offset-y);
 }
