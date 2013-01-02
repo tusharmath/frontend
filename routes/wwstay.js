@@ -41,6 +41,10 @@ exports.about = function(req,res) {
   res.render('about');
 };
 
+exports.careers = function(req,res) {
+  res.render('careers');
+};
+
 exports.leisure = function(req,res) {
   res.render('leisure');
 };

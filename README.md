@@ -18,6 +18,7 @@ Our awesome nodejs powered frontend
     
         $ compass sprite "static/images/sprite/*.png" --force
         $ compass sprite "static/images/landing/*.png" --force
+        $ compass sprite "static/images/team/*.png" --force
 
  * Tell compass to watch changes
 

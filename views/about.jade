@@ -1,74 +1,113 @@
 extends layout
 
+block extra-css
+  link(rel='stylesheet', href='/fe/static/css/about.css')
+
 block content
   div.container.white-bg
-    div.row-fluid
-      div.span3
+    div.row-fluid.vspace-two
+      div.span4
         div.well.sidebar-nav
-          ul.nav.nav-list
+          ul.nav.nav-pills.nav-stacked
             li.active
               a(href="#") The Company
             li
-              a(href="#") Team
-            li
-              a(href="#") Careers
-      .span7
-        .hero-unit
-          .hero-unitSpecial.noBorder
-            h1 Global startup for international travel !
-            p
-              | We are not a one-off ticket supplier. And definitely not a mere room-booking agent. We are a company exclusively designed for corporate traveller accommodation. Apart from savings, commute and comfort, pre checked accommodations ensure the standard and safety of your employee.
-        .apprentice-unit
-          .mapTooltip
+              a(href="/careers") Careers
+      div.span8
+        div.well
+          h2 Our awesome team
+          p We are a funded startup bringing fresh ideas and hoping to transform how people travel.
+        div.profile
+          h3 Rajeev Goswami
+          p Founder &amp; CEO
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        div.profile
+          h3 Shobha Shankar
+          p Founder &amp; COO
+          p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        div.vspace-two
+          h4 ... and rest of our awesome team
 
+        div.apprentice-unit.team-globe.vspace-two
             .bubbleInfo
-              div 
-                img#01.trigger.triggerPos01(src='/fe/static/images/team/01.png', a='a')
+              div
+                img.trigger.triggerPos01.team-nitin
               .popup.bubblePos01
                 .popupHeader
-                  .popupName Pradip P Caulagi.
-                  .popupCountries
+                  .popupName Nitin Mittal (nitin@wwstay.com)
                 .popupDescrip
                   | This dialogue box would be on mouse over of the pictures Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  | laboris
-                .popupEmail pradip@wwstay.com
-                .popupPhone 080 - 1234567890
+                .popupEmail nitin@wwstay.com
 
             .bubbleInfo
-              div 
-                img#01.trigger.triggerPos02(src='/fe/static/images/team/01.png', a='a')
+              div
+                img#01.trigger.triggerPos02.team-suprita
               .popup.bubblePos02
                 .popupHeader
-                  .popupName Pradip P Caulagi.
-                  .popupCountries
+                  .popupName Suprita Shankar (suprita@wwstay.com)
                 .popupDescrip
                   | This dialogue box would be on mouse over of the pictures Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  | laboris
-                .popupEmail pradip@wwstay.com
-                .popupPhone 080 - 1234567890
 
             .bubbleInfo
               div 
-                img#01.trigger.triggerPos03(src='/fe/static/images/team/01.png', a='a')
+                img#01.trigger.triggerPos03.team-sushant
               .popup.bubblePos03
                 .popupHeader
-                  .popupName Pradip P Caulagi.
-                  .popupCountries
+                  .popupName Sushant Kharka (sushant@wwstay.com)
                 .popupDescrip
                   | This dialogue box would be on mouse over of the pictures Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  | laboris
-                .popupEmail pradip@wwstay.com
-                .popupPhone 080 - 1234567890
 
             .bubbleInfo
               div 
-                img#01.trigger.triggerPos04(src='/fe/static/images/team/01.png', a='a')
+                img#01.trigger.triggerPos04.team-helna
               .popup.bubblePos04
                 .popupHeader
-                  .popupName Pradip P Caulagi.
-                  .popupCountries
+                  .popupName Helna Thottan (helna@wwstay.com)
                 .popupDescrip
-                  | This dialogue box would be on mouse over of the pictures Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  | laboris
-                .popupEmail pradip@wwstay.com
-                .popupPhone 080 - 1234567890
+                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+
+block extra-js
+  script(type='text/javascript')
+    $(function () {
+      $('.bubbleInfo').each(function () {
+        var distance = 10;
+        var time = 250;
+        var hideDelay = 500;
+        var hideDelayTimer = null;
+        var beingShown = false;
+        var shown = false;
+        var trigger = $('.trigger', this);
+        var info = $('.popup', this).css('opacity', 0);
+        $([trigger.get(0), info.get(0)]).mouseover(function () {
+          if (hideDelayTimer) clearTimeout(hideDelayTimer);
+          if (beingShown || shown) {
+            // don't trigger the animation again
+            return;
+          } else {
+            // reset position of info box
+            beingShown = true;
+            info.css({ top: -90, left: -33, display: 'block' }).animate({
+              top: '-=' + distance + 'px',
+              opacity: 1
+            }, time, 'swing', function() {
+              beingShown = false;
+              shown = true;
+            });
+          }
+          return false;
+        }).mouseout(function () {
+          if (hideDelayTimer) clearTimeout(hideDelayTimer);
+          hideDelayTimer = setTimeout(function () {
+            hideDelayTimer = null;
+            info.animate({
+              top: '-=' + distance + 'px',
+              opacity: 0
+            }, time, 'swing', function () {
+              shown = false;
+              info.css('display', 'none');
+            });
+          }, hideDelay);
+          return false;
+        });
+      });
+    });

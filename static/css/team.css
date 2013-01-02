@@ -6016,6 +6016,145 @@ blockquote {
   padding-bottom: 10px;
 }
 
+/* teams page */
+.apprentice-unit {
+  border-bottom: none;
+  margin-bottom: 30px;
+  margin-left: 40px;
+  padding-bottom: 30px;
+  width: 650px !important;
+}
+
+.apprentice-unit h2 {
+  color: #198D22;
+  font-family: "Exo", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.apprenticeUnit-Content {
+  float: left;
+  margin-left: 15px;
+  margin-top: -25px;
+  width: 360px;
+}
+
+.apprentice-unit p {
+  float: left;
+  font-size: 14px;
+  height: 50px;
+}
+
+.apprentice-unit img {
+  float: left;
+}
+
+.mapTooltip {
+  background: url("/fe/static/images/sprite-background-2.png") no-repeat scroll -335px -249px transparent;
+  height: 321px;
+  margin-top: 40px;
+  width: 659px;
+}
+
+/* Bubble pop-up */
+.bubbleInfo {
+  position: relative;
+  top: 150px;
+  left: 100px;
+  width: 100px;
+}
+
+.trigger {
+  position: relative;
+  width: 50px;
+}
+
+.triggerPos01 {
+  margin-left: 120px;
+  margin-top: -150px;
+}
+
+.bubblePos01 {
+  margin-left: 220px;
+  margin-top: -130px;
+}
+
+.triggerPos02 {
+  margin-left: -50px;
+  margin-top: -100px;
+}
+
+.bubblePos02 {
+  margin-left: 50px;
+  margin-top: -80px;
+}
+
+.triggerPos03 {
+  margin-left: 80px;
+  margin-top: 0px;
+}
+
+.bubblePos03 {
+  margin-left: 0px;
+  margin-top: 160px;
+}
+
+.triggerPos04 {
+  margin-left: 325px;
+  margin-top: -100px;
+}
+
+.bubblePos04 {
+  margin-left: 205px;
+  margin-top: 130px;
+}
+
+.popup {
+  position: absolute;
+  display: none;
+  z-index: 50;
+  background: #f7f7f7;
+  height: 200px;
+  width: 350px;
+  border: 5px solid #adacab;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  font-family: "Exo", sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+
+.popupHeader {
+  float: left;
+  padding: 15px;
+}
+
+.popupName {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.popupCountries {
+  float: right;
+}
+
+.popupDescrip {
+  float: left;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.popupEmail {
+  float: left;
+}
+
+.popupPhone {
+  float: left;
+}
+
 .carousel .item {
   -webkit-transition: opacity 6s;
   -moz-transition: opacity 6s;

@@ -1,0 +1,7 @@
+@import "team/*.png";
+
+// Overrides
+$team-sprite-dimensions: true;
+$team-position: 20px;
+
+@include all-team-sprites;

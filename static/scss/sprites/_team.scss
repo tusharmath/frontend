@@ -1,0 +1,140 @@
+@import "compass/utilities/sprites/base";
+
+// General Sprite Defaults
+// You can override them before you import this file.
+$team-sprite-base-class: ".team-sprite" !default;
+$team-sprite-dimensions: false !default;
+$team-position: 0% !default;
+$team-spacing: 0 !default;
+$team-repeat: no-repeat !default;
+$team-prefix: '' !default;
+$team-clean-up: true !default;
+$team-layout:vertical !default;
+$team-inline: false !default;
+
+  
+ // These variables control the generated sprite output
+ // You can override them selectively before you import this file.
+ 
+   $team-globe-position: $team-position !default;
+   $team-globe-spacing:  $team-spacing !default;
+   $team-globe-repeat:   $team-repeat !default;
+ 
+   $team-helna-position: $team-position !default;
+   $team-helna-spacing:  $team-spacing !default;
+   $team-helna-repeat:   $team-repeat !default;
+ 
+   $team-nitin-use-position: $team-position !default;
+   $team-nitin-use-spacing:  $team-spacing !default;
+   $team-nitin-use-repeat:   $team-repeat !default;
+ 
+   $team-nitin-position: $team-position !default;
+   $team-nitin-spacing:  $team-spacing !default;
+   $team-nitin-repeat:   $team-repeat !default;
+ 
+   $team-pointerBG-position: $team-position !default;
+   $team-pointerBG-spacing:  $team-spacing !default;
+   $team-pointerBG-repeat:   $team-repeat !default;
+ 
+   $team-suprita-position: $team-position !default;
+   $team-suprita-spacing:  $team-spacing !default;
+   $team-suprita-repeat:   $team-repeat !default;
+ 
+   $team-sushant-position: $team-position !default;
+   $team-sushant-spacing:  $team-spacing !default;
+   $team-sushant-repeat:   $team-repeat !default;
+ 
+   $team-test-position: $team-position !default;
+   $team-test-spacing:  $team-spacing !default;
+   $team-test-repeat:   $team-repeat !default;
+ 
+
+ $team-sprites: sprite-map("team/*.png",
+ 
+   $team-globe-position: $team-globe-position, 
+   $team-globe-spacing:  $team-globe-spacing, 
+   $team-globe-repeat:   $team-globe-repeat,
+ 
+   $team-helna-position: $team-helna-position, 
+   $team-helna-spacing:  $team-helna-spacing, 
+   $team-helna-repeat:   $team-helna-repeat,
+ 
+   $team-nitin-use-position: $team-nitin-use-position, 
+   $team-nitin-use-spacing:  $team-nitin-use-spacing, 
+   $team-nitin-use-repeat:   $team-nitin-use-repeat,
+ 
+   $team-nitin-position: $team-nitin-position, 
+   $team-nitin-spacing:  $team-nitin-spacing, 
+   $team-nitin-repeat:   $team-nitin-repeat,
+ 
+   $team-pointerBG-position: $team-pointerBG-position, 
+   $team-pointerBG-spacing:  $team-pointerBG-spacing, 
+   $team-pointerBG-repeat:   $team-pointerBG-repeat,
+ 
+   $team-suprita-position: $team-suprita-position, 
+   $team-suprita-spacing:  $team-suprita-spacing, 
+   $team-suprita-repeat:   $team-suprita-repeat,
+ 
+   $team-sushant-position: $team-sushant-position, 
+   $team-sushant-spacing:  $team-sushant-spacing, 
+   $team-sushant-repeat:   $team-sushant-repeat,
+ 
+   $team-test-position: $team-test-position, 
+   $team-test-spacing:  $team-test-spacing, 
+   $team-test-repeat:   $team-test-repeat,
+ 
+ $layout: $team-layout,
+ $cleanup: $team-clean-up
+ );
+
+
+// All sprites should extend this class
+// The team-sprite mixin will do so for you.
+@if $team-inline {
+  #{$team-sprite-base-class} {
+    background-image: inline-sprite($team-sprites);
+  } 
+} @else {
+  #{$team-sprite-base-class} {
+    background: $team-sprites no-repeat;
+  }
+}
+//sass functions to return the dimensions of a sprite image as units
+
+  @function team-sprite-width($name) {
+    $file: sprite_file($team-sprites, $name);
+    @return image-width($file);
+  }
+
+  @function team-sprite-height($name) {
+    $file: sprite_file($team-sprites, $name);
+    @return image-height($file);
+  }
+
+
+// Use this to set the dimensions of an element
+// based on the size of the original image.
+@mixin team-sprite-dimensions($name) {
+  @include sprite-dimensions($team-sprites, $name)
+}
+
+// Move the background position to display the sprite.
+@mixin team-sprite-position($name, $offset-x: 0, $offset-y: 0) {
+  @include sprite-background-position($team-sprites, $name, $offset-x, $offset-y)
+}
+
+// Extends the sprite base class and set the background position for the desired sprite.
+// It will also apply the image dimensions if $dimensions is true.
+@mixin team-sprite($name, $dimensions: $team-sprite-dimensions, $offset-x: 0, $offset-y: 0) {
+  @extend #{$team-sprite-base-class};
+  @include sprite($team-sprites, $name, $dimensions, $offset-x, $offset-y)
+}
+
+@mixin team-sprites($sprite-names, $dimensions: $team-sprite-dimensions, $prefix: sprite-map-name($team-sprites), $offset-x: 0, $offset-y: 0) {
+  @include sprites($team-sprites, $sprite-names, $team-sprite-base-class, $dimensions, $prefix, $offset-x, $offset-y)
+}
+
+// Generates a class for each sprited image.
+@mixin all-team-sprites($dimensions: $team-sprite-dimensions, $prefix: sprite-map-name($team-sprites), $offset-x: 0, $offset-y: 0) {
+  @include team-sprites(globe helna nitin-use nitin pointerBG suprita sushant test, $dimensions, $prefix, $offset-x, $offset-y);
+}

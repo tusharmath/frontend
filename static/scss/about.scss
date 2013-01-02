@@ -1,0 +1,107 @@
+@import "compass_twitter_bootstrap";
+@import "compass_twitter_bootstrap_responsive";
+
+@import "_sprite";
+@import "_team";
+@import "screen";
+
+/* teams page */
+
+
+.apprentice-unit {
+  margin-bottom: 30px;
+}
+.apprentice-unit h2 {
+  color: #198D22;
+  font-family: 'Exo', sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+.apprentice-unit p {
+  float: left;
+  font-size: 14px;
+  height: 50px;
+}
+.apprentice-unit img {
+  float: left;
+}
+.bubbleInfo {
+  position: relative;
+  top: 150px;
+}
+.trigger {
+  position: relative;
+}
+
+.triggerPos01 {
+  margin-left: 120px;
+  margin-top: -0px;
+}
+.bubblePos01 {
+  margin-left: 220px;
+  margin-top: -130px;
+}
+.triggerPos02 {
+  margin-left: -50px;
+  margin-top: -100px;
+}
+.bubblePos02 {
+  margin-left: 50px;
+  margin-top: -80px;
+}
+.triggerPos03 {
+  margin-left: 80px;
+  margin-top: 0px;
+}
+.bubblePos03 {
+  margin-left: 0px;
+  margin-top: 160px;
+}
+.triggerPos04 {
+  margin-left: 325px;
+  margin-top: -100px;
+}
+.bubblePos04 {
+  margin-left: 205px;
+  margin-top: 130px;
+}
+.popup {
+  position: absolute;
+  display: none;
+  z-index: 50;
+  background: #f7f7f7;
+  height: 150px;
+  width: 350px;
+  border: 5px solid #adacab;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  font-family: 'Exo', sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+
+.popupHeader {
+  float: left;
+  padding: 15px;
+}
+.popupName {
+  float: left;
+  margin-bottom: 5px;
+}
+.popupCountries {
+  float: right;
+}
+.popupDescrip {
+  float: left;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.popupEmail {
+  float: left;
+}
+.popupPhone {
+  float: left;
+}
