@@ -88,6 +88,7 @@ block content
 
 block extra-js
   script(type='text/javascript')
+    mixpanel.track('About page');
     $(function () {
       $('.bubbleInfo').each(function () {
         var distance = 10;
