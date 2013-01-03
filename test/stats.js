@@ -39,7 +39,7 @@ describe('Test Page stats', function(){
        		if (err) throw err;
        		done();
        })
-  })
+  })/*
   it('should return 200 OK teams Page', function(done){
     request
        .get('/teams')
@@ -48,7 +48,7 @@ describe('Test Page stats', function(){
        		if (err) throw err;
        		done();
        })
-  })
+  })*/
   it('should return 200 OK about Page', function(done){
     request
        .get('/about')
@@ -74,6 +74,15 @@ describe('Test Page stats', function(){
        .end(function(err,res){
        		if (err) throw err;
        		done();
+       })
+  })
+  it('should return 200 OK terms Page', function(done){
+    request
+       .get('/terms')
+       .expect(200)
+       .end(function(err,res){
+          if (err) throw err;
+            done();
        })
   })
 });
