@@ -28,6 +28,10 @@ $team-inline: false !default;
    $team-helna-spacing:  $team-spacing !default;
    $team-helna-repeat:   $team-repeat !default;
  
+   $team-naveen-position: $team-position !default;
+   $team-naveen-spacing:  $team-spacing !default;
+   $team-naveen-repeat:   $team-repeat !default;
+ 
    $team-nitin-use-position: $team-position !default;
    $team-nitin-use-spacing:  $team-spacing !default;
    $team-nitin-use-repeat:   $team-repeat !default;
@@ -70,6 +74,10 @@ $team-inline: false !default;
    $team-helna-position: $team-helna-position, 
    $team-helna-spacing:  $team-helna-spacing, 
    $team-helna-repeat:   $team-helna-repeat,
+ 
+   $team-naveen-position: $team-naveen-position, 
+   $team-naveen-spacing:  $team-naveen-spacing, 
+   $team-naveen-repeat:   $team-naveen-repeat,
  
    $team-nitin-use-position: $team-nitin-use-position, 
    $team-nitin-use-spacing:  $team-nitin-use-spacing, 
@@ -152,5 +160,5 @@ $team-inline: false !default;
 
 // Generates a class for each sprited image.
 @mixin all-team-sprites($dimensions: $team-sprite-dimensions, $prefix: sprite-map-name($team-sprites), $offset-x: 0, $offset-y: 0) {
-  @include team-sprites(carlos globe helna nitin-use nitin pointerBG pradip suprita sushant test, $dimensions, $prefix, $offset-x, $offset-y);
+  @include team-sprites(carlos globe helna naveen nitin-use nitin pointerBG pradip suprita sushant test, $dimensions, $prefix, $offset-x, $offset-y);
 }
