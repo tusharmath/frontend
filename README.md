@@ -27,3 +27,7 @@ Our awesome nodejs powered frontend
  * Run server 
 
         $ node app.js
+
+ * Testing
+
+ 		$ make test
