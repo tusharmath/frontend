@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.container.white-bg
+    div(style='height: 300px; padding: 2em;').row-fluid.vspace-two
+      p(style='font-size: 1.2em; color: #468847; font-weight: bold;').text-error
+        | Thanks!  We have received your request.  We will get back to you soon!
+
+block extra-js
+  script
+    mixpanel.track('Request error page')

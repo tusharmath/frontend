@@ -63,13 +63,13 @@ block content
         p.vspace-two
           | Try us for free for a flavor of what we have to offer.
               
-        div.contact-form
-          input(type='text', placeholder='Enter email address').contactText-input
-          input(type='text', placeholder='Destination city').contactText-input
-          input(type='text', placeholder='Check-in date').contactText-input
-          input(type='text', placeholder='Check-out date').contactText-input
-          input(type='text', placeholder='Budget').contactText-input
-          button(type="submit") GO
+        form(action='/request', method='post').contact-form
+          input(type='email', name='guest_email', placeholder='Enter email address').contactText-input
+          input(type='text', name='dest_city', placeholder='Destination city').contactText-input
+          input(type='date', name='check_in', placeholder='Check-in date').contactText-input
+          input(type='date', name='check_out', placeholder='Check-out date').contactText-input
+          input(type='text', name='budget', placeholder='Budget').contactText-input
+          button(type="submit", class='btn btn-inverse') GO
 
     div.press.span4#testimonials.paper
       div.content

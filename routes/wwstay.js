@@ -1,4 +1,5 @@
-var pg = require('pg'),
+var email   = require("emailjs/email"),
+    pg = require('pg'),
     config = {
       user: 'admin',
       password: process.env.PG_ADMIN_PASS,
@@ -24,6 +25,29 @@ exports.home = function(req, res) {
     return res.render('home'); // show error or home page?
   });
 };
+
+exports.request = function(req, res) {
+  var from = 'auto-mailer@wwstay.com',
+      server  = email.server.connect({
+        user: from,
+        password: process.env.MAILER_PASS,
+        host: "smtp.gmail.com", 
+        ssl: true
+      });
+
+  server.send({
+    text: require('util').inspect(req.body),
+    from: from,
+    to: 'business@wwstay.com, travel@wwstay.com',
+    subject: "Online request"
+  }, function(err, message) { 
+    if (err) {
+      console.log(err);
+      return res.render('request-error');
+    }
+    return res.render('request-received');
+  });
+}
 
 exports.deals = function(req, res) {
   res.render('deals');

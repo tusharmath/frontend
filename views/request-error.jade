@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  div.container.white-bg
+    div(style='height: 300px; padding: 2em;').row-fluid.vspace-two
+      p(style='font-size: 1.2em; color: #B94A48; font-weight: bold;').text-error
+        | Oops!  There was an error recording your request.  Please try again.
+        | Or you can send a mail to travel@wwstay.com.
+
+block extra-js
+  script
+    mixpanel.track('Request error page')

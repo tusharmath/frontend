@@ -21,7 +21,8 @@
     "clean-css": ">= 0.9.1",
     "pg": ">= 0.10.2",
     "mocha": ">= 1.7.4",
-    "supertest": ">= 0.5.1"
+    "supertest": ">= 0.5.1",
+    "emailjs": "*"
   },
   "engines": {
     "node": ">=0.8"
