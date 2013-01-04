@@ -5599,8 +5599,8 @@ a.label:hover, a.badge:hover {
   text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-.team-sprite, .team-achin, .team-carlos, .team-caver, .team-chitra, .team-globe, .team-helna, .team-naveen, .team-nitin, .team-pradip, .team-suprita, .team-sushant {
-  background: url('/fe/static/images/team-s1b04fcfaf1.png') no-repeat;
+.team-sprite, .team-achin, .team-carlos, .team-caver, .team-chitra, .team-globe, .team-helna, .team-hemant, .team-naveen, .team-nitin, .team-pradip, .team-suprita, .team-sushant {
+  background: url('/fe/static/images/team-s73c5b59d3e.png') no-repeat;
 }
 
 .team-achin {
@@ -5636,6 +5636,12 @@ a.label:hover, a.badge:hover {
 .team-helna {
   background-position: 0 -705px;
   height: 91px;
+  width: 72px;
+}
+
+.team-hemant {
+  background-position: 0 -1202px;
+  height: 76px;
   width: 72px;
 }
 
@@ -11820,7 +11826,7 @@ blockquote {
 
 .triggerPos04 {
   margin-left: 325px;
-  margin-top: -100px;
+  margin-top: -50px;
 }
 
 .bubblePos04 {
@@ -11884,6 +11890,16 @@ blockquote {
 }
 
 .bubblePos10 {
+  margin-left: 60px;
+  margin-top: -50px;
+}
+
+.triggerPos11 {
+  margin-left: 460px;
+  margin-top: -200px;
+}
+
+.bubblePos11 {
   margin-left: 60px;
   margin-top: -50px;
 }
