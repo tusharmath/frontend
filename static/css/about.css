@@ -5599,13 +5599,31 @@ a.label:hover, a.badge:hover {
   text-shadow: 3px 3px 0 black, -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
-.team-sprite, .team-carlos, .team-globe, .team-helna, .team-naveen, .team-nitin-use, .team-nitin, .team-pointerBG, .team-pradip, .team-suprita, .team-sushant, .team-test {
-  background: url('/fe/static/images/team-sb3a3cbc660.png') no-repeat;
+.team-sprite, .team-achin, .team-carlos, .team-caver, .team-chitra, .team-globe, .team-helna, .team-naveen, .team-nitin, .team-pradip, .team-suprita, .team-sushant {
+  background: url('/fe/static/images/team-s1b04fcfaf1.png') no-repeat;
+}
+
+.team-achin {
+  background-position: 0 -875px;
+  height: 81px;
+  width: 72px;
 }
 
 .team-carlos {
   background-position: 0 -427px;
   height: 103px;
+  width: 72px;
+}
+
+.team-caver {
+  background-position: 0 -1122px;
+  height: 80px;
+  width: 72px;
+}
+
+.team-chitra {
+  background-position: 0 -796px;
+  height: 79px;
   width: 72px;
 }
 
@@ -5627,26 +5645,14 @@ a.label:hover, a.badge:hover {
   width: 72px;
 }
 
-.team-nitin-use {
-  background-position: 0 -962px;
-  height: 97px;
-  width: 80px;
-}
-
 .team-nitin {
-  background-position: 0 -881px;
+  background-position: 0 -1041px;
   height: 81px;
   width: 72px;
 }
 
-.team-pointerBG {
-  background-position: 0 -1122px;
-  height: 97px;
-  width: 80px;
-}
-
 .team-pradip {
-  background-position: 0 -796px;
+  background-position: 0 -956px;
   height: 85px;
   width: 72px;
 }
@@ -5661,12 +5667,6 @@ a.label:hover, a.badge:hover {
   background-position: 0 -530px;
   height: 90px;
   width: 72px;
-}
-
-.team-test {
-  background-position: 0 -1059px;
-  height: 63px;
-  width: 50px;
 }
 
 /*
@@ -11742,6 +11742,43 @@ blockquote {
   float: left;
 }
 
+.popup, .popup-large {
+  position: absolute;
+  display: none;
+  z-index: 50;
+  background: #f7f7f7;
+  height: 150px;
+  width: 350px;
+  border: 5px solid #adacab;
+  border-radius: 12px;
+  -moz-border-radius: 12px;
+  -o-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  font-family: "Exo", sans-serif;
+  color: #000;
+  font-size: 18px;
+}
+
+.popup-large {
+  height: 250px;
+}
+
+.popupHeader {
+  float: left;
+  padding: 15px;
+}
+
+.popupName {
+  float: left;
+  margin-bottom: 5px;
+}
+
+.popupDescrip {
+  float: left;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
 .bubbleInfo {
   position: relative;
   top: 150px;
@@ -11767,7 +11804,7 @@ blockquote {
 }
 
 .bubblePos02 {
-  margin-left: 50px;
+  margin-left: 250px;
   margin-top: -80px;
 }
 
@@ -11821,48 +11858,32 @@ blockquote {
   margin-top: -50px;
 }
 
-.popup {
-  position: absolute;
-  display: none;
-  z-index: 50;
-  background: #f7f7f7;
-  height: 150px;
-  width: 350px;
-  border: 5px solid #adacab;
-  border-radius: 12px;
-  -moz-border-radius: 12px;
-  -o-border-radius: 12px;
-  -webkit-border-radius: 12px;
-  font-family: "Exo", sans-serif;
-  color: #000;
-  font-size: 18px;
+.triggerPos08 {
+  margin-left: 560px;
+  margin-top: -300px;
 }
 
-.popupHeader {
-  float: left;
-  padding: 15px;
+.bubblePos08 {
+  margin-left: 160px;
+  margin-top: -50px;
 }
 
-.popupName {
-  float: left;
-  margin-bottom: 5px;
+.triggerPos09 {
+  margin-left: 380px;
+  margin-top: -300px;
 }
 
-.popupCountries {
-  float: right;
+.bubblePos09 {
+  margin-left: 60px;
+  margin-top: -50px;
 }
 
-.popupDescrip {
-  float: left;
-  font-family: Tahoma, Geneva, sans-serif;
-  font-size: 14px;
-  margin-bottom: 5px;
+.triggerPos10 {
+  margin-left: 360px;
+  margin-top: -200px;
 }
 
-.popupEmail {
-  float: left;
-}
-
-.popupPhone {
-  float: left;
+.bubblePos10 {
+  margin-left: 60px;
+  margin-top: -50px;
 }

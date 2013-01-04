@@ -13,87 +13,7 @@ block content
               a(href="#") The Company
             li
               a(href="/careers") Careers
-      div.span8
-        div.well
-          h2 Our awesome team
-          p We are a funded startup bringing fresh ideas and hoping to transform how people travel.
-        div.profile
-          h3 Rajeev Goswami
-          p Founder &amp; CEO
-          p Rajeev has more than 2 decades of experience as Business Leader, Technology marketeer and a successful Entrepreneur in IT Industry. 
-          p Prior to starting WWStay, he founded and successfully built high end consulting startup Shore Consulting, serving many Fortune 500 customers in USA. He built strategic partnerships with large US multinationals. He created new services offerings in the area of IT infrastructure management space including SAAS and mobile wireless. 
-          p Prior to Shore Consulting, he built and managed joint venture company of US multinational CA Inc as CEO.  Earlier, he held several Sr. Management positions managing large teams in IBM India.  Rajeev has completed his Global management program from Northwestern University, Kellogg School of Management and MBA from Faculty of Management Studies (FMS), Delhi.
-        div.profile
-          h3 Shobha Shankar
-          p Co-Founder &amp; COO
-          p Shobha has more than 15 years of experience working in several senior positions in large IT companies.  She was a director at Shore Consulting, where along with Rajeev, she built a high end consulting business.  She was Director Professional Services at Computer Associates Inc and Director HR, at CA TCG software.
-          p Shobha specializes in overseeing and managing Human Resources and Operations.  She has a degree in management from Xavier Labour Relations Institute (XLRI).
-        div.vspace-two
-          h4 ... and rest of our awesome team
-
-        div.apprentice-unit.team-globe.vspace-two
-          .bubbleInfo
-            div
-              img.trigger.triggerPos01.team-carlos
-            .popup.bubblePos01
-              .popupHeader
-                .popupName Carlos Derich (carlos.derich@wwstay.com)
-              .popupDescrip
-                | Carlos is a student from the land of beautiful football and samba, Brazil.  He only recently got his driving license but is already adding features using nodejs and Django and tests in Mocha.
-
-          .bubbleInfo
-            div
-              img#01.trigger.triggerPos02.team-suprita
-            .popup.bubblePos02
-              .popupHeader
-                .popupName Suprita Shankar (suprita@wwstay.com)
-              .popupDescrip
-                | Suprita was one of the first employees who joined us as an intern during her engineering days.  When she has a bit of free time from learning new languages and techniques we use everyday, she indulges in photography.
-
-          .bubbleInfo
-            div 
-              img#01.trigger.triggerPos03.team-sushant
-            .popup.bubblePos03
-              .popupHeader
-                .popupName Sushant Kharka (sushant@wwstay.com)
-              .popupDescrip
-                | Sushant has provided customer support in several travel companies and offers the same expertise to our guest.  He likes to sport new hairstyles, as often as possible.
-
-          .bubbleInfo
-            div 
-              img#01.trigger.triggerPos04.team-helna
-            .popup.bubblePos04
-              .popupHeader
-                .popupName Helna Thottan (helna@wwstay.com)
-              .popupDescrip
-                | Helna has been with the travel industry for several years and brings a lot of experience to our sales team.
-
-          .bubbleInfo
-            div 
-              img#01.trigger.triggerPos05.team-pradip
-            .popup.bubblePos05
-              .popupHeader
-                .popupName Pradip Caulagi (pradip@wwstay.com)
-              .popupDescrip
-                | Pradip completed his masters from IIITB and studied graph theory at Paderborn.  He has worked with Yahoo! and Cisco before joining us.  Other than releasing <strike>half baked</strike> features twice a day, Pradip spends his time listening to trash metal and playing chess.
-
-          .bubbleInfo
-            div
-              img.trigger.triggerPos06.team-nitin
-            .popup.bubblePos06
-              .popupHeader
-                .popupName Nitin Mittal (nitin@wwstay.com)
-              .popupDescrip
-                | Nitin brings a wealth of experience to our sales team.  He has previously worked with Amex and several other companies.
-
-          .bubbleInfo
-            div
-              img.trigger.triggerPos07.team-naveen
-            .popup.bubblePos07
-              .popupHeader
-                .popupName Naveen Kumar (naveen@wwstay.com)
-              .popupDescrip
-                | Naveen keeps an eagle eye on our accounts and makes sure the technology has no off-by-some errors.  His Sundays are dedicated to Cricket.
+      include includes/bio
 
 block extra-js
   script(type='text/javascript')
@@ -107,7 +27,7 @@ block extra-js
         var beingShown = false;
         var shown = false;
         var trigger = $('.trigger', this);
-        var info = $('.popup', this).css('opacity', 0);
+        var info = $('[class^=popup]', this).css('opacity', 0);
         $([trigger.get(0), info.get(0)]).mouseover(function () {
           if (hideDelayTimer) clearTimeout(hideDelayTimer);
           if (beingShown || shown) {

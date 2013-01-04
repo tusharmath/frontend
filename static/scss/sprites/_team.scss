@@ -16,9 +16,21 @@ $team-inline: false !default;
  // These variables control the generated sprite output
  // You can override them selectively before you import this file.
  
+   $team-achin-position: $team-position !default;
+   $team-achin-spacing:  $team-spacing !default;
+   $team-achin-repeat:   $team-repeat !default;
+ 
    $team-carlos-position: $team-position !default;
    $team-carlos-spacing:  $team-spacing !default;
    $team-carlos-repeat:   $team-repeat !default;
+ 
+   $team-caver-position: $team-position !default;
+   $team-caver-spacing:  $team-spacing !default;
+   $team-caver-repeat:   $team-repeat !default;
+ 
+   $team-chitra-position: $team-position !default;
+   $team-chitra-spacing:  $team-spacing !default;
+   $team-chitra-repeat:   $team-repeat !default;
  
    $team-globe-position: $team-position !default;
    $team-globe-spacing:  $team-spacing !default;
@@ -32,17 +44,9 @@ $team-inline: false !default;
    $team-naveen-spacing:  $team-spacing !default;
    $team-naveen-repeat:   $team-repeat !default;
  
-   $team-nitin-use-position: $team-position !default;
-   $team-nitin-use-spacing:  $team-spacing !default;
-   $team-nitin-use-repeat:   $team-repeat !default;
- 
    $team-nitin-position: $team-position !default;
    $team-nitin-spacing:  $team-spacing !default;
    $team-nitin-repeat:   $team-repeat !default;
- 
-   $team-pointerBG-position: $team-position !default;
-   $team-pointerBG-spacing:  $team-spacing !default;
-   $team-pointerBG-repeat:   $team-repeat !default;
  
    $team-pradip-position: $team-position !default;
    $team-pradip-spacing:  $team-spacing !default;
@@ -56,16 +60,24 @@ $team-inline: false !default;
    $team-sushant-spacing:  $team-spacing !default;
    $team-sushant-repeat:   $team-repeat !default;
  
-   $team-test-position: $team-position !default;
-   $team-test-spacing:  $team-spacing !default;
-   $team-test-repeat:   $team-repeat !default;
- 
 
  $team-sprites: sprite-map("team/*.png",
+ 
+   $team-achin-position: $team-achin-position, 
+   $team-achin-spacing:  $team-achin-spacing, 
+   $team-achin-repeat:   $team-achin-repeat,
  
    $team-carlos-position: $team-carlos-position, 
    $team-carlos-spacing:  $team-carlos-spacing, 
    $team-carlos-repeat:   $team-carlos-repeat,
+ 
+   $team-caver-position: $team-caver-position, 
+   $team-caver-spacing:  $team-caver-spacing, 
+   $team-caver-repeat:   $team-caver-repeat,
+ 
+   $team-chitra-position: $team-chitra-position, 
+   $team-chitra-spacing:  $team-chitra-spacing, 
+   $team-chitra-repeat:   $team-chitra-repeat,
  
    $team-globe-position: $team-globe-position, 
    $team-globe-spacing:  $team-globe-spacing, 
@@ -79,17 +91,9 @@ $team-inline: false !default;
    $team-naveen-spacing:  $team-naveen-spacing, 
    $team-naveen-repeat:   $team-naveen-repeat,
  
-   $team-nitin-use-position: $team-nitin-use-position, 
-   $team-nitin-use-spacing:  $team-nitin-use-spacing, 
-   $team-nitin-use-repeat:   $team-nitin-use-repeat,
- 
    $team-nitin-position: $team-nitin-position, 
    $team-nitin-spacing:  $team-nitin-spacing, 
    $team-nitin-repeat:   $team-nitin-repeat,
- 
-   $team-pointerBG-position: $team-pointerBG-position, 
-   $team-pointerBG-spacing:  $team-pointerBG-spacing, 
-   $team-pointerBG-repeat:   $team-pointerBG-repeat,
  
    $team-pradip-position: $team-pradip-position, 
    $team-pradip-spacing:  $team-pradip-spacing, 
@@ -102,10 +106,6 @@ $team-inline: false !default;
    $team-sushant-position: $team-sushant-position, 
    $team-sushant-spacing:  $team-sushant-spacing, 
    $team-sushant-repeat:   $team-sushant-repeat,
- 
-   $team-test-position: $team-test-position, 
-   $team-test-spacing:  $team-test-spacing, 
-   $team-test-repeat:   $team-test-repeat,
  
  $layout: $team-layout,
  $cleanup: $team-clean-up
@@ -160,5 +160,5 @@ $team-inline: false !default;
 
 // Generates a class for each sprited image.
 @mixin all-team-sprites($dimensions: $team-sprite-dimensions, $prefix: sprite-map-name($team-sprites), $offset-x: 0, $offset-y: 0) {
-  @include team-sprites(carlos globe helna naveen nitin-use nitin pointerBG pradip suprita sushant test, $dimensions, $prefix, $offset-x, $offset-y);
+  @include team-sprites(achin carlos caver chitra globe helna naveen nitin pradip suprita sushant, $dimensions, $prefix, $offset-x, $offset-y);
 }
