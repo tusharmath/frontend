@@ -39,28 +39,10 @@ describe('Test Page stats', function(){
        		if (err) throw err;
        		done();
        })
-  })/*
-  it('should return 200 OK teams Page', function(done){
-    request
-       .get('/teams')
-       .expect(200)
-       .end(function(err,res){
-       		if (err) throw err;
-       		done();
-       })
-  })*/
+  })
   it('should return 200 OK about Page', function(done){
     request
        .get('/about')
-       .expect(200)
-       .end(function(err,res){
-       		if (err) throw err;
-       		done();
-       })
-  })
-  it('should return 200 OK deals Page', function(done){
-    request
-       .get('/deals')
        .expect(200)
        .end(function(err,res){
        		if (err) throw err;
@@ -74,15 +56,6 @@ describe('Test Page stats', function(){
        .end(function(err,res){
        		if (err) throw err;
        		done();
-       })
-  })
-  it('should return 200 OK terms Page', function(done){
-    request
-       .get('/terms')
-       .expect(200)
-       .end(function(err,res){
-          if (err) throw err;
-            done();
        })
   })
 });
