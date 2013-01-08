@@ -76,3 +76,7 @@ exports.leisure = function(req,res) {
 exports.business = function(req,res) {
   res.render('business');
 };
+
+exports.test = function(req,res) {
+  res.render('test');
+};
