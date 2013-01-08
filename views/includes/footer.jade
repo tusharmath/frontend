@@ -1,42 +1,29 @@
 div#footer
-  div.container.content
-    div.row
-      div.span2.offset2.disclaimer
-        p
+  div.container
+    div.row-fluid
+      div.pull-right
+        a(href="/business", class='go-green') BUSINESS TRAVEL
+        span.go-pink.hspace
+          | //
+        a(href="/leisure", class='go-green') LEISURE TRAVEL
+        span.go-pink.hspace
+          | //
+        a(href="/app/profile/deals", class='go-green') DEALS
+    div.row-fluid.vspace-two
+      div.pull-right
+        a(href="/") HOME
+        span &nbsp; | &nbsp;
+        a(href="/about") ABOUT
+        span &nbsp; | &nbsp;
+        a(href="/careers") CAREERS
+        span &nbsp; | &nbsp;
+        a(href="/news") NEWS
+        span &nbsp; | &nbsp;
+        a(href="http:/credits") CREDITS
+    div.row-fluid
+        p(style='text-align: center; color: white; font-size: 0.9em;')
           | &copy; 2012 WWStay All Rights Reserved | &nbsp;
-          a(href="/privacy") Fine Print
-
-      div.span8
-        ul.nav.nav-pills.pull-right.go-green
-          li
-            a(href="/business") BUSINESS TRAVEL
-          li.go-pink.hspace
-            | //
-          li
-            a(href="/leisure") LEISURE TRAVEL
-          li.go-pink.hspace
-            | //
-          li
-            a(href="/app/profile/deals") SPECIAL OFFERS
-        ul.nav.nav-pills.pull-right.links
-          li
-            a(href="/") HOME
-          li.hspace |
-          li
-            a(href="/about") ABOUT
-          li.hspace |
-          li
-            a(href="/careers") CAREERS
-          li.hspace |
-          li
-            a(href="/news") NEWS
-          li.hspace |
-          li
-            a(href="http://blog.wwstay.com/") BLOG
-          li.hspace |
-          li
-            a(href="http:/credits") CREDITS
-          li.hspace |
-          li
-            a(href="http://mixpanel.com/f/partner)
+          a(href="/privacy", style='color: white; text-decoration: none') Fine Print
+          | &nbsp; | &nbsp;
+          a(href="http://mixpanel.com/f/partner)
               img(src="http://mixpanel.com/site_media/images/partner/badge_blue.png", alt="Real Time Web Analytics")

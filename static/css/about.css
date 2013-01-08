@@ -11650,35 +11650,31 @@ blockquote {
   height: 425px;
   background: url("/fe/static/images/footerBg.png") repeat-x;
   position: relative;
+  color: white;
 }
 
-#footer .content {
+#footer .container {
   position: absolute;
   margin: 0;
   bottom: 20px;
 }
 
-#footer .disclaimer a {
+#footer a {
   color: white;
-}
-
-#footer .nav-pills li a {
-  padding: 0;
-}
-
-#footer .links a {
-  color: white;
+  text-decoration: none;
 }
 
 #footer .go-green,
-#footer .go-green a {
-  text-decoration: none;
-  color: #2CC75C;
+#footer .go-pink {
   font-size: 18px;
 }
 
 #footer .go-pink {
   color: #C3188D;
+}
+
+#footer a.go-green {
+  color: #2CC75C;
 }
 
 .white-bg {
