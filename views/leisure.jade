@@ -7,32 +7,79 @@ block content
   div.container.white-bg
     div.row-fluid.vspace-two
       div.span4
-        div.well.sidebar-nav
-          ul.nav.nav-pills.nav-stacked
-            li.nav-header Your holiday at your pace
-            li.active
-              a(href="#events-destinations", data-toggle='tab') Events &amp; destinations
-            li
-              a(href="#plan-itinerary", data-toggle='tab') Plan your itinerary
-            li
-              a(href="#unique-experiences", data-toggle='tab') Unique experiences
-      div.span8.well
+        ul.leftnav
+          li.nav-header Your holiday at your pace
+          li.active
+            a(href="#events-destinations", data-toggle='tab') Groups, events &amp; conferences
+          li
+            a(href="#plan-itinerary", data-toggle='tab') Destinations
+          li
+            a(href="#unique-experiences", data-toggle='tab') Unique experiences
+          li
+            a(href="#luxury", data-toggle='tab') Luxury
+      div.span1.sprite-shadow
+      div.span7.marketing-content
         div.tab-content
           div.tab-pane.active#events-destinations
-            h2 Events &amp; destinations
+            h2 Groups, Events &amp; conferences
             hr
-            img(src='http://farm7.staticflickr.com/6189/6139871568_7754f7d6d8_m_d.jpg', alt='Events & destinations').pull-right.thumbnail
-            p We have helped corporates organize conferences and events around the world.  We can help you plan your event end to end or just handle the accommodation aspect of it.
+            ul
+              li Accomodations for large groups
+              li Organizing events &amp; conferences across the globe
+              li Handling logistics &amp; high end technical infrastructure like live streaming
+              li Planning &amp; executing events
+              li Local sight seeing/culture tours
+              li ... and more
           div.tab-pane#plan-itinerary
-            h2 Plan your itinerary
+            h2 Destinations
             hr
-            img(src='http://farm3.staticflickr.com/2234/2344196743_02bc6d14d4_m_d.jpg', alt='Plan your itinerary').pull-right.thumbnail
-            p We can help you plan your itinerary and execute it.  We have worked with guests whose budget is fixed, whose dates are fixed or whose destinations are fixed.  Or who just want to back-pack.  We can plan holidays from Kerala backwaters to adventure tours in New Zealand.
+            ul
+              li Europe
+                ul
+                  li Paris - group booking with gala dinners
+                  li Zurich - conference &amp; adventure tours
+                  li Venice
+                  li Rome
+                  li London
+                  li Edinborough
+              li South east asia
+                ul
+                  li Phuket
+                  li Bali
+                  li Pattaya
+                  li Bangkok
+                  li Singapore
+                  li Srilanka
+              li America
+                ul
+                  li Miami
+                  li Atlanta
+                  li New York city
+                  li San Fransisco
+                  li Canada
+              li ... and more
           div.tab-pane#unique-experiences
             h2 Unique experiences
             hr
-            img(src='http://farm3.staticflickr.com/2459/3960527305_4b012f2d9b_m_d.jpg', alt='Unique experience').pull-right.thumbnail
-            p We can help you plan your itinerary and execute it.  We have worked with guests whose budget is fixed, whose dates are fixed or whose destinations are fixed.  Or who just want to back-pack.  We can plan holidays from Kerala backwaters to adventure tours in New Zealand.
+            ul
+              li Scuba diving
+              li Snorkeling
+              li Cross country driving
+              li Trekking
+              li Skiing
+              li Wild life safari
+              li Sky diving
+              li ... and more
+          div.tab-pane#luxury
+            h2 Luxury
+            hr
+            ul
+              li Top end cruises
+              li Exotic Island getaways
+              li Ultra luxury resorts
+              li High end hotels
+              li ... and more
+          div.tab-pane#unique-experiences
 
 block extra-js
   script

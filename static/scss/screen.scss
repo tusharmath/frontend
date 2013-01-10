@@ -125,7 +125,7 @@ blockquote {
   margin-top: -100px;
 }
 .marketing-generic {
-  margin-top: -400px;
+  margin-top: -300px;
 }
 .bring-up {
   position: relative;
@@ -377,7 +377,7 @@ blockquote {
 
 .sprite-bandage a {
   font-size: 2.1em;
-  color: #DAC8A7;
+  color: #808000;
   position: absolute;
   top: 50px;
   padding-left: 10px;
@@ -386,4 +386,46 @@ blockquote {
 
 .sprite-bandage a:hover {
   text-decoration: none;
+}
+
+ul.leftnav {
+  padding: 15px 0;
+  list-style: none;
+  width: 70%;
+}
+
+ul.leftnav > li > a {
+  border-bottom: 2px dotted;
+  font-family: 'Exo', Sans-serif;
+  text-decoration: none;
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+}
+
+ul.leftnav li.nav-header {
+  font-size: 1.2em;
+}
+
+ul.leftnav .active a,
+ul.leftnav a:hover {
+  background-color: #B5A76F;
+  color: #010101;
+}
+
+.marketing-content {
+  font-family: 'Exo', sans-serif;
+}
+
+.marketing-content h2 {
+  font-size: 30px;
+  font-weight: 700;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+
+.marketing-content li {
+  margin-top: 6px;
+  font-size: 16px;
+  font-weight: 400;
 }
