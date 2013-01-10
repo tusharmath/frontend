@@ -39,9 +39,11 @@ $sprite-paper-long-dimensions: false;
 }
 
 .sprite-bandage {
-  /* http://css-tricks.com/adding-stroke-to-web-text/ */
-  /* http://css-tricks.com/examples/TextStroke/ */
-
   font-family: "Exo", sans-serif;
   font-weight: 700;
+}
+
+.sprite-paper {
+  background-repeat: repeat-x;
+  width: 100%;
 }

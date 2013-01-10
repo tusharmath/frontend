@@ -1,69 +1,75 @@
-.sprite-sprite, .sprite-bandage, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-shadow, .sprite-suitcase, .sprite-twitter {
-  background: url('/fe/static/images/sprite-s968de24419.png') no-repeat;
+.sprite-sprite, .sprite-bandage, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-paper, .sprite-shadow, .sprite-suitcase, .sprite-twitter {
+  background: url('/fe/static/images/sprite-s8938e66f9e.png') no-repeat;
 }
 
 .sprite-bandage {
-  background-position: 0 -507px;
+  background-position: 0 -447px;
   height: 116px;
   width: 296px;
 }
 
 .sprite-chain {
-  background-position: 0 -1274px;
+  background-position: 0 -1313px;
   height: 60px;
   width: 32px;
 }
 
 .sprite-facebook {
-  background-position: 0 -1334px;
+  background-position: 0 -1373px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-gplus {
-  background-position: 0 -1248px;
+  background-position: 0 -1287px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-logo-small {
-  background-position: 0 -231px;
+  background-position: 0 -171px;
   height: 152px;
   width: 222px;
 }
 
 .sprite-logo-smaller {
-  background-position: 0 -383px;
+  background-position: 0 -323px;
   height: 124px;
   width: 187px;
 }
 
 .sprite-logo {
-  background-position: 0 -60px;
+  background-position: 0 0;
   height: 171px;
   width: 261px;
 }
 
 .sprite-navbar {
-  background-position: 0 0;
+  background-position: 0 -563px;
   height: 60px;
-  width: 1280px;
+  width: 300px;
+}
+
+.sprite-paper {
+  background-position: 0 -623px;
+  height: 39px;
+  width: 300px;
 }
 
 .sprite-shadow {
-  background-position: 0 -623px;
+  background-position: 0 -662px;
   height: 625px;
   width: 21px;
 }
 
 .sprite-suitcase {
-  background-position: 0 -1386px;
+  background-position: 0 -1425px;
   height: 23px;
   width: 29px;
 }
 
 .sprite-twitter {
-  background-position: 0 -1360px;
+  background-position: 0 -1399px;
   height: 26px;
   width: 22px;
 }
@@ -99,10 +105,13 @@
 }
 
 .sprite-bandage {
-  /* http://css-tricks.com/adding-stroke-to-web-text/ */
-  /* http://css-tricks.com/examples/TextStroke/ */
   font-family: "Exo", sans-serif;
   font-weight: 700;
+}
+
+.sprite-paper {
+  background-repeat: repeat-x;
+  width: 100%;
 }
 
 .team-sprite, .team-achin, .team-carlos, .team-caver, .team-chitra, .team-globe, .team-helna, .team-hemant, .team-naveen, .team-nitin, .team-pradip, .team-suprita, .team-sushant {
@@ -181,72 +190,78 @@
   width: 72px;
 }
 
-.sprite-sprite, .sprite-bandage, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-shadow, .sprite-suitcase, .sprite-twitter {
-  background: url('/fe/static/images/sprite-s968de24419.png') no-repeat;
+.sprite-sprite, .sprite-bandage, .sprite-chain, .sprite-facebook, .sprite-gplus, .sprite-logo-small, .sprite-logo-smaller, .sprite-logo, .sprite-navbar, .sprite-paper, .sprite-shadow, .sprite-suitcase, .sprite-twitter {
+  background: url('/fe/static/images/sprite-s8938e66f9e.png') no-repeat;
 }
 
 .sprite-bandage {
-  background-position: 0 -507px;
+  background-position: 0 -447px;
   height: 116px;
   width: 296px;
 }
 
 .sprite-chain {
-  background-position: 0 -1274px;
+  background-position: 0 -1313px;
   height: 60px;
   width: 32px;
 }
 
 .sprite-facebook {
-  background-position: 0 -1334px;
+  background-position: 0 -1373px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-gplus {
-  background-position: 0 -1248px;
+  background-position: 0 -1287px;
   height: 26px;
   width: 22px;
 }
 
 .sprite-logo-small {
-  background-position: 0 -231px;
+  background-position: 0 -171px;
   height: 152px;
   width: 222px;
 }
 
 .sprite-logo-smaller {
-  background-position: 0 -383px;
+  background-position: 0 -323px;
   height: 124px;
   width: 187px;
 }
 
 .sprite-logo {
-  background-position: 0 -60px;
+  background-position: 0 0;
   height: 171px;
   width: 261px;
 }
 
 .sprite-navbar {
-  background-position: 0 0;
+  background-position: 0 -563px;
   height: 60px;
-  width: 1280px;
+  width: 300px;
+}
+
+.sprite-paper {
+  background-position: 0 -623px;
+  height: 39px;
+  width: 300px;
 }
 
 .sprite-shadow {
-  background-position: 0 -623px;
+  background-position: 0 -662px;
   height: 625px;
   width: 21px;
 }
 
 .sprite-suitcase {
-  background-position: 0 -1386px;
+  background-position: 0 -1425px;
   height: 23px;
   width: 29px;
 }
 
 .sprite-twitter {
-  background-position: 0 -1360px;
+  background-position: 0 -1399px;
   height: 26px;
   width: 22px;
 }
@@ -282,10 +297,13 @@
 }
 
 .sprite-bandage {
-  /* http://css-tricks.com/adding-stroke-to-web-text/ */
-  /* http://css-tricks.com/examples/TextStroke/ */
   font-family: "Exo", sans-serif;
   font-weight: 700;
+}
+
+.sprite-paper {
+  background-repeat: repeat-x;
+  width: 100%;
 }
 
 .landing-sprite, .landing-business, .landing-deals, .landing-leisure, .landing-recent_destination {
