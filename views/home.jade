@@ -11,7 +11,7 @@ block marketing
 
 block content
   div.container
-    div.landing-recent_destination.offset1.vspace-five
+    div.landing-recent_destination.vspace-five.row-fluid
       div.recent-destinations
         ul
           li
@@ -41,7 +41,8 @@ block content
             a(href="") GERMANY
           li
             a(href="") OREGON
-    div.image-tiles.offset1
+
+    div.image-tiles.row-fluid
       div.column_01
         img(src="/fe/static/images/recent_destinations/01.jpg", alt="Place01")
       div.column_02
@@ -57,40 +58,40 @@ block content
       div.column_04
         img(src="/fe/static/images/recent_destinations/06.jpg",alt="Place01")
 
-    div.press.span3.offset1#contactus.paper
-      div.content
-        h4 REQUEST QUOTE
-        p.vspace-two
-          | Try us for free for a flavor of what we have to offer.
-              
-        form(action='/request', method='post').contact-form
-          input(type='email', name='guest_email', placeholder='Enter email address').contactText-input
-          input(type='text', name='dest_city', placeholder='Destination city').contactText-input
-          input(type='date', name='check_in', placeholder='Check-in date').contactText-input
-          input(type='date', name='check_out', placeholder='Check-out date').contactText-input
-          input(type='text', name='budget', placeholder='Budget').contactText-input
-          button(type="submit", class='btn btn-inverse') GO
+    div.row-fluid.vspace-five
+      div.press.span4.paper#contactus
+        div.content
+          h4 REQUEST QUOTE
+          p.vspace-two
+            | Try us for free for a flavor of what we have to offer.
+                
+          form(action='/request', method='post').contact-form
+            input(type='email', name='guest_email', placeholder='Enter email address').input-xlarge
+            input(type='text', name='dest_city', placeholder='Destination city').input-xlarge
+            input(type='date', name='check_in', placeholder='Check-in date').input-xlarge
+            input(type='date', name='check_out', placeholder='Check-out date').input-xlarge
+            input(type='text', name='budget', placeholder='Budget').input-xlarge
+            div.form-actions
+              button(type="submit", class='btn btn-inverse') GO
+      div.press.span4#testimonials.paper
+        div.content
+          h4 Delighted &amp; happy
+          div.vspace-two.testimonial
+            blockquote
+              p 
+                | What can I say? Excellent! I would like to thank you and your
+                | colleagues for your patient advice to me over the past year
+                | and offering timely solutions. You are truly a professional
+                | outfit, and it has been a pleasure doing business with you.
+              small Travel Manager, Mid Size BPO Company
 
-    div.press.span4#testimonials.paper
-      div.content
-        h4 Delighted &amp; happy
-        div.vspace-two.testimonial
-          blockquote
-            p 
-              | What can I say? Excellent! I would like to thank you and your
-              | colleagues for your patient advice to me over the past year
-              | and offering timely solutions. You are truly a professional
-              | outfit, and it has been a pleasure doing business with you.
-            small Travel Manager, Mid Size BPO Company
-
-          blockquote.vspace-two
-            p
-              | I just wanted to thank you all at WW Stay for all your time and effort in offering us exemplary service. You have been polite professional and a pleasure to work with.  I shall be recommending you to others and look forward to doing more business with you in the future. Many Thanks.
-            small Principal, Global Consulting Company for his personal holiday
-
-    div.press.span3#twitter-feed.paper
-      h4 Recent tweets
-      div.tweet.vspace-two
+            blockquote.vspace-two
+              p
+                | I just wanted to thank you all at WW Stay for all your time and effort in offering us exemplary service. You have been polite professional and a pleasure to work with.  I shall be recommending you to others and look forward to doing more business with you in the future. Many Thanks.
+              small Principal, Global Consulting Company for his personal holiday
+      div.press.span4#twitter-feed.paper
+        h4 Recent tweets
+        div.tweet.vspace-two
 
 block extra-js
   script
