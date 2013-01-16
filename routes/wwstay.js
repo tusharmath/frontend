@@ -77,6 +77,6 @@ exports.business = function(req,res) {
   res.render('business');
 };
 
-exports.test = function(req,res) {
-  res.render('test');
+exports.contact = function(req,res) {
+  res.render('contact');
 };

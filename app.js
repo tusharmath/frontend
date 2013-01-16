@@ -29,7 +29,7 @@ app.get('/about', wwstay.about);
 app.get('/careers', wwstay.careers);
 app.get('/leisure', wwstay.leisure);
 app.get('/business', wwstay.business);
-app.get('/test', wwstay.test);
+app.get('/contact', wwstay.contact);
 app.post('/request', wwstay.request);
 
 http.createServer(app).listen(app.get('port'), function(){

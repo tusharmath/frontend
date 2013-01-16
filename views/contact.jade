@@ -1,0 +1,49 @@
+extends layout
+
+block carousel
+  include includes/carousel-map
+
+block content
+  div.container.white-bg
+    div.vspace-five.row-fluid
+      div.span4.offset2
+        h3 Our offices
+        hr
+        p.vspace-two
+          | <address>
+          | <strong>WWStay Inc</strong> <br>
+          | 315, Lowell Avenue, Suite 2B <br>
+          | Hamilton <br>
+          | NJ 08619. USA <br>
+          | <abbr title='Phone'>P:</abbr> 609-318-3035 <br>
+        p.vspace-two
+          | <strong>Global Stay Services Private Limited</strong> <br>
+          | First Floor, #29, Empire Infantry, <br>
+          | Infantry Road, <br>
+          | Bangalore - 560001, INDIA <br>
+          | +91 (0)80 40969706 <br>
+        p.vspace-two
+          | WWstay Ltd <br>
+          | 4th Floor, Kings Suite, 15 College Road <br>
+          | Harrow, Middlesex, HA1 1BA, UK <br>
+          | +44 (0) 20 8515 7053 <br>
+      div.span1.sprite-shadow
+      div.span3
+        h3 Contact emails
+        hr
+        p
+          | Send us an email and we would be happy to respond to all your queries.
+        dl
+          dt For business queries
+          dd 
+            a(href='mailto:business@wwstay.com') Business
+          dt For Feedback related to travel
+          dd 
+            a(href='mailto:feedback@wwstay.com') Feedback
+          dt For problems, everything else
+          dd 
+            a(href='mailto:support@wwstay.com') Support
+            
+block extra-js
+  script
+    mixpanel.track('Careers page');
