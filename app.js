@@ -30,6 +30,8 @@ app.get('/careers', wwstay.careers);
 app.get('/leisure', wwstay.leisure);
 app.get('/business', wwstay.business);
 app.get('/contact', wwstay.contact);
+app.get('/privacy', wwstay.privacy);
+app.get('/terms', wwstay.terms);
 app.post('/request', wwstay.request);
 
 http.createServer(app).listen(app.get('port'), function(){
