@@ -600,3 +600,10 @@ ul.leftnav a:hover {
   font-size: 16px;
   font-weight: 400;
 }
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .navbar #contact-details .content {
+    font-size: 16px;
+  }
+}

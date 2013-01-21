@@ -793,6 +793,12 @@ ul.leftnav a:hover {
   font-weight: 400;
 }
 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .navbar #contact-details .content {
+    font-size: 16px;
+  }
+}
 /* teams page */
 .apprentice-unit {
   margin-bottom: 30px;

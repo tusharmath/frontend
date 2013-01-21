@@ -1,12 +1,8 @@
 div.navbar.navbar-fixed-top
   div.sprite-navbar
     div.container
-      button(data-toggle='collapse', data-target='.nav-collapse').btn.btn-navbar
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
       block navbar-logo
-      div.nav-collapse
+      div.nav-collapse.visible-desktop
         ul.nav
           li.sprite-facebook
             a(href='http://www.facebook.com/wwstay') Facebook
@@ -15,7 +11,7 @@ div.navbar.navbar-fixed-top
           li.sprite-gplus
             a(href='https://plus.google.com/103949997937127342839') G+
       div#contact-details
-        div.sprite-suitcase
+        div.sprite-suitcase.visible-desktop
         div.content
-          | CALL: +91 9845283733 / EMAIL: &nbsp;
+          span.hidden-phone CALL: +91 9845283733 / EMAIL: &nbsp;
           a(href='mailto:travel@wwstay.com') TRAVEL@WWSTAY.COM
