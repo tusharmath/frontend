@@ -739,7 +739,7 @@ blockquote {
 }
 
 .sprite-bandage a {
-  font-size: 2.1em;
+  font-size: 1.9em;
   color: #808000;
   position: absolute;
   top: 50px;
@@ -797,6 +797,24 @@ ul.leftnav a:hover {
 @media (max-width: 767px) {
   .navbar #contact-details .content {
     font-size: 16px;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) {
+  .sprite-bandage a {
+    font-size: 1.6em;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+  .sprite-bandage a {
+    font-size: 1.6em;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+  .sprite-bandage a {
+    font-size: 1.6em;
   }
 }
 /* teams page */
