@@ -32,6 +32,10 @@ $sprite-inline: false !default;
    $sprite-gplus-spacing:  $sprite-spacing !default;
    $sprite-gplus-repeat:   $sprite-repeat !default;
  
+   $sprite-jeans-position: $sprite-position !default;
+   $sprite-jeans-spacing:  $sprite-spacing !default;
+   $sprite-jeans-repeat:   $sprite-repeat !default;
+ 
    $sprite-logo-small-position: $sprite-position !default;
    $sprite-logo-small-spacing:  $sprite-spacing !default;
    $sprite-logo-small-repeat:   $sprite-repeat !default;
@@ -82,6 +86,10 @@ $sprite-inline: false !default;
    $sprite-gplus-position: $sprite-gplus-position, 
    $sprite-gplus-spacing:  $sprite-gplus-spacing, 
    $sprite-gplus-repeat:   $sprite-gplus-repeat,
+ 
+   $sprite-jeans-position: $sprite-jeans-position, 
+   $sprite-jeans-spacing:  $sprite-jeans-spacing, 
+   $sprite-jeans-repeat:   $sprite-jeans-repeat,
  
    $sprite-logo-small-position: $sprite-logo-small-position, 
    $sprite-logo-small-spacing:  $sprite-logo-small-spacing, 
@@ -168,5 +176,5 @@ $sprite-inline: false !default;
 
 // Generates a class for each sprited image.
 @mixin all-sprite-sprites($dimensions: $sprite-sprite-dimensions, $prefix: sprite-map-name($sprite-sprites), $offset-x: 0, $offset-y: 0) {
-  @include sprite-sprites(bandage chain facebook gplus logo-small logo-smaller logo navbar paper shadow suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
+  @include sprite-sprites(bandage chain facebook gplus jeans logo-small logo-smaller logo navbar paper shadow suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
 }
