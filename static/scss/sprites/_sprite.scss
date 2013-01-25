@@ -24,6 +24,10 @@ $sprite-inline: false !default;
    $sprite-chain-spacing:  $sprite-spacing !default;
    $sprite-chain-repeat:   $sprite-repeat !default;
  
+   $sprite-divider-position: $sprite-position !default;
+   $sprite-divider-spacing:  $sprite-spacing !default;
+   $sprite-divider-repeat:   $sprite-repeat !default;
+ 
    $sprite-facebook-position: $sprite-position !default;
    $sprite-facebook-spacing:  $sprite-spacing !default;
    $sprite-facebook-repeat:   $sprite-repeat !default;
@@ -78,6 +82,10 @@ $sprite-inline: false !default;
    $sprite-chain-position: $sprite-chain-position, 
    $sprite-chain-spacing:  $sprite-chain-spacing, 
    $sprite-chain-repeat:   $sprite-chain-repeat,
+ 
+   $sprite-divider-position: $sprite-divider-position, 
+   $sprite-divider-spacing:  $sprite-divider-spacing, 
+   $sprite-divider-repeat:   $sprite-divider-repeat,
  
    $sprite-facebook-position: $sprite-facebook-position, 
    $sprite-facebook-spacing:  $sprite-facebook-spacing, 
@@ -176,5 +184,5 @@ $sprite-inline: false !default;
 
 // Generates a class for each sprited image.
 @mixin all-sprite-sprites($dimensions: $sprite-sprite-dimensions, $prefix: sprite-map-name($sprite-sprites), $offset-x: 0, $offset-y: 0) {
-  @include sprite-sprites(bandage chain facebook gplus jeans logo-small logo-smaller logo navbar paper shadow suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
+  @include sprite-sprites(bandage chain divider facebook gplus jeans logo-small logo-smaller logo navbar paper shadow suitcase twitter, $dimensions, $prefix, $offset-x, $offset-y);
 }
