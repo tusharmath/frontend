@@ -88,3 +88,7 @@ exports.terms= function(req,res) {
 exports.privacy = function(req,res) {
   res.render('privacy');
 };
+
+exports.credits = function(req,res) {
+  res.render('credits');
+};
