@@ -12,7 +12,7 @@ var email   = require("emailjs/email"),
 client.connect();
 
 exports.home = function(req, res) {
-  client.query("SELECT name from booking_country", function(err, result) {
+  client.query("SELECT name from hotel_country", function(err, result) {
     var country = [];
     if (err) {
       console.log("Database Error " + err);
