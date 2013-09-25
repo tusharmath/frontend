@@ -65,14 +65,14 @@ block content
           p.vspace-two
             | Try us for free for a flavor of what we have to offer.
                 
-          form(action='/request', method='post').contact-form
+          form(action='#', method='post').contact-form
             input(type='email', name='guest_email', placeholder='Enter email address').input-xlarge
             input(type='text', name='dest_city', placeholder='Destination city').input-xlarge
             input(type='date', name='check_in', placeholder='Check-in date').input-xlarge
             input(type='date', name='check_out', placeholder='Check-out date').input-xlarge
             input(type='text', name='rate_per_night', placeholder='Budget/per night').input-xlarge
             div.form-actions
-              button(type="submit", class='btn btn-inverse') GO
+              button(type="submit", class='btn btn-inverse disabled') GO
       div.press.span4#testimonials.paper
         div.content
           h4 Delighted &amp; happy
