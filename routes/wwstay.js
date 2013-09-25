@@ -1,29 +1,7 @@
-var email   = require("emailjs/email"),
-    pg = require('pg'),
-    config = {
-      user: 'admin',
-      password: process.env.PG_ADMIN_PASS,
-      database: 'bookingdb',
-      host: 'localhost',
-      port: 5432
-    },
-    client = new pg.Client(config);
-
-client.connect();
+var email   = require("emailjs/email");
 
 exports.home = function(req, res) {
-  client.query("SELECT name from hotel_country", function(err, result) {
-    var country = [];
-    if (err) {
-      console.log("Database Error " + err);
-    } else {
-      for (var i = 0 ; i < result.rows.length; i++ ) {
-        country.push(result.rows[i].name)
-      }
-      return res.render('home', { country: country });
-    }
-    return res.render('home'); // show error or home page?
-  });
+  return res.render('home');
 };
 
 exports.request = function(req, res) {
