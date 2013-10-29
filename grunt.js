@@ -32,6 +32,18 @@ module.exports = function(grunt) {
       files: '<config:lint.files>',
       tasks: 'lint test'
     },
+		sass: {
+			dist: {
+				files: {
+					'static/css/about.css': 'static/scss/about.scss',
+					'static/css/screen.css': 'static/scss/screen.scss'
+				},
+				options: {
+					compass: true
+				}
+
+			}
+		},
     jshint: {
       options: {
         curly: true,
@@ -52,6 +64,8 @@ module.exports = function(grunt) {
     uglify: {}
   });
 
+
+	grunt.loadNpmTasks('grunt-contrib-sass');
   // Default task.
   grunt.registerTask('default', 'lint test concat min');
 };

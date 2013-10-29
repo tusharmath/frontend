@@ -1,6 +1,6 @@
 {
   "name": "app",
-  "version": "0.1.0",
+	"version": "0.1.1",
   "author": {
     "name": "WWstay geek squad <dev@wwstay.com>"
   },
@@ -21,7 +21,9 @@
     "clean-css": ">= 0.9.1",
     "mocha": ">= 1.7.4",
     "supertest": ">= 0.5.1",
-    "emailjs": "*"
+		"emailjs": "*",
+		"versionator": "*",
+		"grunt-contrib-sass": "*"
   },
   "engines": {
     "node": ">=0.8"
