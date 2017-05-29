@@ -1,5 +1,7 @@
 # Our rocking website
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/tusharmath/frontend.svg)](https://greenkeeper.io/)
+
 Our awesome nodejs powered frontend
 
 ## Dev setup
